@@ -1,0 +1,17 @@
+FROM        node:12
+
+# The base node image sets a very verbose log level.
+ENV NPM_CONFIG_LOGLEVEL warn
+
+RUN         apt-get update \
+    && apt-get install zip python3-dev python3-pip default-jre wget -y
+RUN         pip3 install --upgrade --user awscli awsebcli==3.10
+RUN         echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc
+
+RUN         npm install -g
+
+EXPOSE      3000
+
+WORKDIR     /easter/web
+
+ENTRYPOINT  ["sleep", "2d"]
