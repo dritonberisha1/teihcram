@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import FrontPage from './pages/front-page';
-import LoginPage from './pages/admin/login-page';
+import AdminPage from './pages/admin/admin-page';
+
 function App() {
   return (
     <BrowserRouter>
@@ -10,8 +11,8 @@ function App() {
         <Route exact path='/'>
           <FrontPage />
         </Route>
-        <Route path='/login'>
-          <LoginPage />
+        <Route path='/admin'>
+          <AdminPage />
         </Route>
       </Switch>
     </BrowserRouter>

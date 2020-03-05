@@ -6,7 +6,7 @@ function FrontPage() {
     return (
         <div>
             <h1>Front Page</h1>
-            <Link to="/login"><h2>Login</h2></Link>
+            <Link to="/admin/login"><h2>Login</h2></Link>
         </div>
     );
 }

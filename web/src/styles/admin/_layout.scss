@@ -1,0 +1,18 @@
+.container {
+  margin-top: 72px;
+}
+
+.navbar {
+  .logo {
+    width: 120px;
+  }
+}
+
+body {
+  height: 100%;
+  background-color: theme-color("background");
+}
+
+#root {
+  height: 100%;
+}

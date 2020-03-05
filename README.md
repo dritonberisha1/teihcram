@@ -18,4 +18,4 @@ Easter challenge campaign for Alten
 
 ## Where is the Database?
 There is a local version of DynamoDB running as a docker container you can see your local database by going to `localhost:8001`
-(Make sure the `localstack` & `dynamodb-admin` containers are up by running `docker ps` to activate the containers if they are down `docker-compose up`)
+(Make sure the `localstack` & `dynamodb-admin` containers are up by running `docker ps`. To activate the containers if they are down `docker-compose up`)

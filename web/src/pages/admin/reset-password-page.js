@@ -18,33 +18,32 @@ function LoginPage() {
     function FirstBox() {
         return (
             <Fragment>
-                <h1>SIGN UP</h1>
                 <div>
+                    <h1>SIGN UP</h1>
                     <p>
                         Don't have an account?
                         Sign up here to register your team and minutes.
                 </p>
-
                     <div className="d-flex flex-column">
                         <Link to="/admin/sign-up" className="btn btn-third">Sign up</Link>
                     </div>
                 </div>
                 <div className="mt-4">
-                    <p>Forgot your password?</p>
+                    <p>Want to go back and login?</p>
                     <div className="d-flex flex-column">
-                        <Link to="/admin/reset-password" className="btn btn-third">Reset Password</Link>
+                        <Link to="/admin/login" className="btn btn-third">Login</Link>
                     </div>
                 </div>
             </Fragment>
-        )
+        );
     }
 
     function SecondBox() {
         return (
             <Fragment>
-                <h1>LOGIN</h1>
-                <div >
-                    <div className="pt-2">
+                <h1>RESET PASSWORD</h1>
+                <div className="d-flex flex-column mt-2">
+                    <div className="mt-2">
                         <label className="m-0">Email address</label>
                         <input
                             className="form-control"
@@ -54,8 +53,8 @@ function LoginPage() {
                             type="text"
                             value={email} />
                     </div>
-                    <div className="pt-2">
-                        <label className="m-0">Password</label>
+                    <div className="mt-2">
+                        <label className="m-0">New Password</label>
                         <input
                             className="form-control"
                             name="password"
@@ -65,12 +64,9 @@ function LoginPage() {
                             value={password} />
                     </div>
                 </div>
-                <div className="d-flex flex-column mt-3">
-                    {/* <button className="btn btn-secondary" onClick={_login}>Login</button> */}
-                    <Link className="btn btn-secondary" to="/admin/create-team">Login</Link>
-                </div>
+                <button className="btn btn-secondary mt-4" onClick={_resetPassword}>Login</button>
             </Fragment>
-        )
+        );
     }
 
     function _onChange(event) {
@@ -86,8 +82,8 @@ function LoginPage() {
         }
     }
 
-    function _login() {
-        console.log("Login", email);
+    function _resetPassword() {
+        console.log("RESET_PASSWORD", email);
     }
 }
 

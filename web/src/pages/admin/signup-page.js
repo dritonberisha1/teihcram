@@ -7,44 +7,39 @@ const INPUTS = {
     PASSWORD: 'password'
 };
 
-function LoginPage() {
+function SignUpPage() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     return (
         <AuthLayout firstBox={<FirstBox />} secondBox={<SecondBox />} />
-    )
+    );
 
     function FirstBox() {
         return (
             <Fragment>
-                <h1>SIGN UP</h1>
                 <div>
+                    <h1>LOGIN</h1>
                     <p>
-                        Don't have an account?
-                        Sign up here to register your team and minutes.
-                </p>
-
-                    <div className="d-flex flex-column">
-                        <Link to="/admin/sign-up" className="btn btn-third">Sign up</Link>
-                    </div>
+                        Already have an account?
+                    </p>
+                    <p>
+                        Login here.
+                    </p>
                 </div>
-                <div className="mt-4">
-                    <p>Forgot your password?</p>
-                    <div className="d-flex flex-column">
-                        <Link to="/admin/reset-password" className="btn btn-third">Reset Password</Link>
-                    </div>
+                <div className="d-flex flex-column">
+                    <Link to="/admin/login" className="btn btn-third mt-4">Login</Link>
                 </div>
             </Fragment>
-        )
+        );
     }
 
     function SecondBox() {
         return (
             <Fragment>
-                <h1>LOGIN</h1>
-                <div >
-                    <div className="pt-2">
+                <h1>SIGN UP</h1>
+                <div className="d-flex flex-column mt-2">
+                    <div className="mt-2">
                         <label className="m-0">Email address</label>
                         <input
                             className="form-control"
@@ -54,7 +49,7 @@ function LoginPage() {
                             type="text"
                             value={email} />
                     </div>
-                    <div className="pt-2">
+                    <div className="mt-2">
                         <label className="m-0">Password</label>
                         <input
                             className="form-control"
@@ -64,13 +59,10 @@ function LoginPage() {
                             type="password"
                             value={password} />
                     </div>
-                </div>
-                <div className="d-flex flex-column mt-3">
-                    {/* <button className="btn btn-secondary" onClick={_login}>Login</button> */}
-                    <Link className="btn btn-secondary" to="/admin/create-team">Login</Link>
+                    <button className="btn btn-secondary mt-4" onClick={_signup}>Sign up</button>
                 </div>
             </Fragment>
-        )
+        );
     }
 
     function _onChange(event) {
@@ -86,10 +78,10 @@ function LoginPage() {
         }
     }
 
-    function _login() {
-        console.log("Login", email);
+    function _signup() {
+        console.log("NAME", email);
     }
 }
 
 
-export default LoginPage;
+export default SignUpPage;
