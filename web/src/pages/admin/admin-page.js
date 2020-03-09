@@ -1,32 +1,79 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React, { Component } from 'react';
+import { Redirect, Route, Switch, withRouter } from 'react-router-dom';
+import authService from '../../services/auth-service';
 import AdminLayout from '../../components/admin/admin-layout/admin-layout';
 
 //Components
 import CreateTeamPage from './create-team-page';
-import LoginPage from './login-page';
-import ResetPassword from './reset-password-page';
-import SignUpPage from './signup-page';
+import LoginPage from './auth/login-page';
+import ResetPassword from './auth/reset-password-page';
+import SignUpPage from './auth/signup-page';
+import VerifyAccountPage from './auth/verify-account-page';
 
-function Admin() {
-    return (
-        <AdminLayout>
-            <Switch>
-                <Route exact path="/admin/create-team">
-                    <CreateTeamPage />
-                </Route>
-                <Route exact path="/admin/login">
-                    <LoginPage />
-                </Route>
-                <Route exact path="/admin/reset-password">
-                    <ResetPassword />
-                </Route>
-                <Route exact path="/admin/sign-up">
-                    <SignUpPage />
-                </Route>
-            </Switch>
-        </AdminLayout>
-    )
+class Admin extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            authenticated: false
+        }
+    }
+
+    // componentDidMount() {
+    //     this.isAuthenticated();
+    // }
+
+    // componentDidUpdate(prevProps) {
+    //     this.isAuthenticated();
+    // }
+
+    // isAuthenticated = () => {
+    //     authService.getCurrentSession()
+    //         .then(session => {
+    //             console.log("HERE_SESSION", session);
+    //             this.setState({
+    //                 authenticated: true
+    //             });
+    //         }).catch(() => {
+    //             // this.props.history.push('/login');
+    //             this.setState({
+    //                 authenticated: false
+    //             })
+    //         });
+    // }
+
+    render() {
+        const { authenticated } = this.state //Variables
+        return (
+            <AdminLayout>
+                <Switch>
+                    <Route exact path="/admin/create-team">
+                        <CreateTeamPage />
+                    </Route>
+                    <Route exact path="/admin/login">
+                        <LoginPage />
+                    </Route>
+                    <Route exact path="/admin/reset-password">
+                        <ResetPassword />
+                    </Route>
+                    <Route exact path="/admin/sign-up">
+                        <SignUpPage />
+                    </Route>
+                    <Route exact path="/admin/verify-account">
+                        <VerifyAccountPage />
+                    </Route>
+                    {/* <Route render={props => (
+                        <Redirect from="*" to={
+                            !authenticated ? '/admin/login' : ({
+                                pathname: `/admin/create-team`,
+                                state: { from: props.location }
+                            })
+                        } />
+                    )} /> */}
+                </Switch>
+            </AdminLayout >
+        )
+    }
 }
 
-export default Admin;
+export default withRouter(Admin);

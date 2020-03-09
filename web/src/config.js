@@ -1,16 +1,11 @@
-import config from '../environment';
-const domain = 'localhost:3000/';
 export default {
-    apiRootPath: environment.apiRootPath,
-    domain: domain,
     aws: {
-        region: config.awsRegion,
-        cognitoUserPoolId: config.cognitoUserPoolId,
-        cognitoIdentityPoolId: config.cognitoIdentityPoolId,
-        cognitoDomain: config.cognitoDomain,
-        cognitoRedirectSignin: config.cognitoRedirectSignIn,
-        cognitoRedirectSignout: config.cognitoRedirectSignOut,
-        cognitoUserPoolWebClientId: config.cognitoUserPoolWebClientId,
-        cognitoHostedSigninPageUrl: config.cognitoHostedSigninPageUrl
+        cognitoIdentityPoolId: process.env.REACT_APP_AWS_COGNITO_IDENTITY_POOL_ID,
+        cognitoUserPoolId: process.env.REACT_APP_AWS_COGNITO_POOL_ID,
+        cognitoUserPoolWebClientId: process.env.REACT_APP_AWS_COGNITO_APP_CLIENT_ID,
+        cognitoDomain: process.env.REACT_APP_AWS_COGNITO_DOMAIN,
+        cognitoRedirectSignin: process.env.REACT_APP_AWS_COGNITO_REDIRECT_SIGNIN,
+        cognitoRedirectSignout: process.env.REACT_APP_AWS_COGNITO_REDIRECT_SIGNOUT,
+        region: process.env.REACT_APP_AWS_REGION
     }
 };

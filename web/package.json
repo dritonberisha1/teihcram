@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
+    "aws-amplify": "^2.2.6",
+    "aws-sdk": "^2.633.0",
     "bootstrap": "^4.4.1",
     "cra-template": "1.0.2",
     "lodash": "^4.17.15",

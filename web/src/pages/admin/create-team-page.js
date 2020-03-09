@@ -19,7 +19,7 @@ function CreateTeamPage() {
 
     return (
         <div className="d-flex justify-content-center flex-row flex-wrap-reverse pt-lg-5 pt-3">
-            <div className="d-flex flex-column col-lg-8 bg-third justify-content-between py-5 px-4">
+            <div className="d-flex flex-column col-lg-8 bg-third justify-content-between py-5 px-4 text-secondary">
                 <h1>CREATE TEAM</h1>
                 <div className="pt-2">
                     <label className="m-0">Team Name</label>
@@ -33,7 +33,7 @@ function CreateTeamPage() {
                 </div>
                 <div className="pt-2">
                     <label className="m-0">Minutes </label>
-                    <div class="input-group mb-3">
+                    <div className="input-group mb-3">
                         <input
                             className="form-control"
                             min="0"
@@ -43,8 +43,8 @@ function CreateTeamPage() {
                             step="1"
                             type="number"
                             value={minutes} />
-                        <div class="input-group-append">
-                            <span class="input-group-text">min</span>
+                        <div className="input-group-append">
+                            <span className="input-group-text">min</span>
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ function CreateTeamPage() {
                     <label className="m-0">Clients </label>
                     <Select name="tr" options={clients} value={client} onChange={selectClient} />
                 </div>
-                <div className="d-flex flex-column mt-3">
+                <div className="d-flex flex-column col-lg-6 mt-3 mx-auto">
                     <button className="btn btn-secondary" onClick={_submit}>Submit</button>
                 </div>
             </div>

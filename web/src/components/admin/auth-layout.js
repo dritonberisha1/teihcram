@@ -9,7 +9,7 @@ function AuthLayout(props) {
             <div className="d-flex flex-column col-lg-4 bg-secondary justify-content-between py-5 px-4 text-third">
                 {firstBox}
             </div>
-            <div className="d-flex flex-column bg-third col-lg-4 justify-content-between py-5 px-4">
+            <div className="d-flex flex-column bg-third col-lg-4 justify-content-between py-5 px-4 text-secondary">
                 {secondBox}
             </div>
         </div>
