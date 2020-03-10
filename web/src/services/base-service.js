@@ -1,11 +1,16 @@
 import _ from 'lodash';
 import config from '../config';
+import authService from './auth-service';
 
 /**
  * @abstract
  * Represetns a base implementation for all client side services
  */
 class BaseService {
+
+    constructor() {
+        this.apiRootPath = process.env.REACT_APP_API_ENDPOINT;
+    }
 
     /**
      * @protected
@@ -85,15 +90,15 @@ class BaseService {
         });
 
         return new Promise((resolve, reject) => {
-            config.get('services').authService.getBearerToken()
+            return authService.getCurrentSession()
                 .then(token => {
                     authOptions.headers.push({
                         Authorization: `Bearer ${token}`
                     })
                     this.__makeRequest(authOptions)
-                        .then(resolve)
-                        .catch(reject);
-                }).catch(reject);
+                })
+                .then(resolve)
+                .catch(reject);
         })
     }
 

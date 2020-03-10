@@ -16,7 +16,7 @@ services:
           - ./ops:/easter/ops
           - ./web:/easter/web
         env_file:
-          - ./ops/local.env
+          - ./ops/dev.env
     api:
         image: easter/api
         container_name: easter-api
@@ -35,7 +35,7 @@ services:
             - ./ops:/easter/ops
             - ./api:/easter/api
         env_file:
-            - ./ops/local.env
+            - ./ops/dev.env
     localstack:
         image: localstack/localstack
         container_name: easter-localstack

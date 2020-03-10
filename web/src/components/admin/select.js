@@ -6,8 +6,8 @@ function Select(props) {
     const { onChange } = props; //Actions
 
     return (
-        <select class="custom-select" onChange={onChange} value={value}>
-            {options.map(option => <option selected={option === value} value={option}>{option}</option>)}
+        <select className="custom-select" onChange={onChange} defaultValue={value}>
+            {options.map(option => <option value={option}>{option}</option>)}
         </select>
     )
 }

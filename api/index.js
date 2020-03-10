@@ -11,6 +11,7 @@ import config from './config';
 
 const app = express();
 app.use(cors());
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
@@ -18,18 +19,18 @@ app.use(cookieParser());
 app.use('/teams', teamRoutes);
 
 // catch 404 and forward to error handler
-app.use((req, res, next) => {
-    console.error('Path not found:', req.originalUrl);
+app.use((request, response, next) => {
+    console.error('Path not found:', request.originalUrl);
     let err = new Error('Not Found');
     err.status = 404;
     next(err);
 });
 
 // error handler
-app.use((err, req, res) => {
-    console.error(err);
+app.use((error, request, response) => {
+    console.error(error);
     const errorStatus = 500;
-    res.status(err.statusCode || errorStatus).json(err);
+    response.status(error.statusCode || errorStatus).json(error);
 });
 
 export const handler = serverless(app, {
