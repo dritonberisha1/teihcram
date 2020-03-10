@@ -17,27 +17,25 @@ services:
           - ./web:/easter/web
         env_file:
           - ./ops/local.env
-    # api:
-    #     image: easter/api
-    #     container_name: easter-api
-    #     tty: true
-    #     build:
-    #         context: ./serverless
-    #         dockerfile: dockerfile
-    #         args:
-    #         - API_PORT=3001
-    #         - OPS_PORT=3002
-    #     ports:
-    #         - "3001:3001"
-    #     networks:
-    #         - easter-net
-    #     volumes:
-    #         - ./ops:/easter/ops
-    #         - ./serverless:/easter/api
-    #     env_file:
-    #         - ./ops/local.env
-    #     depends_on:
-    #         - easter-db
+    api:
+        image: easter/api
+        container_name: easter-api
+        tty: true
+        build:
+            context: ./api
+            dockerfile: dockerfile
+            args:
+            - API_PORT=3001
+            - OPS_PORT=3002
+        ports:
+            - "3001:3001"
+        networks:
+            - easter-net
+        volumes:
+            - ./ops:/easter/ops
+            - ./api:/easter/api
+        env_file:
+            - ./ops/local.env
     localstack:
         image: localstack/localstack
         container_name: easter-localstack
@@ -65,4 +63,3 @@ networks:
 volumes:
     www_modules:
     localstack_data:
-    easter_db:

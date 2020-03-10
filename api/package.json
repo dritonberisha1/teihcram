@@ -1,0 +1,47 @@
+{
+  "name": "easter-campaign-api",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "sls offline start --watch --webpack-use-polling --isLocal=true -s dev",
+    "deploy": "sls deploy --package ./.serverless -s dev",
+    "deploy-prod": "sls deploy --package ./.serverless -s prod",
+    "pack:dev": "sls package -s dev",
+    "pack:prod": "sls package -s prod",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "@babel/register": "^7.6.2",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "serverless-dynamodb-local": "^0.2.38",
+    "serverless-offline": "^5.12.0",
+    "serverless-plugin-split-stacks": "^1.9.1",
+    "serverless-webpack": "^5.3.1",
+    "copy-webpack-plugin": "^5.0.4",
+    "eslint": "^5.13.0",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "webpack": "^4.41.2",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "aws-amplify": "^1.2.2",
+    "aws-sdk": "^2.553.0",
+    "aws-serverless-express": "^3.3.5",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
+    "serverless-http": "^2.3.0",
+    "uuid": "^3.3.3"
+  }
+}
