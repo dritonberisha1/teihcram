@@ -2,7 +2,7 @@
 Easter challenge campaign for Alten
 * [Local Setup](#local-setup)
 * [Where is the Database](#where-is-the-database)
-* [Website & Admin pannel](#website-&-admin-pannel)
+* [Website & Admin pannel](#website--admin-pannel)
 
 ## Local setup
 
