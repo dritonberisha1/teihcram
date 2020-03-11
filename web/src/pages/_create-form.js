@@ -2,18 +2,18 @@ import React, { Component, Fragment } from 'react';
 import authService from '../services/auth-service';
 import teamService from '../services/team-service';
 
-const PHASES = {
-    SIGNUP: 'signup',
-    CONFIRM_EMAIL: 'confirmEmail',
-    SUBMIT_TEAM: 'submitTeam',
-    COMPLETE: 'complete'
+const TEAM_PHASES = {
+    INIT: 'initial',
+    SIGNED_UP: 'signedUp',
+    EMAIL_CONFIRMED: 'email_confirmed',
+    TEAM_SUBMITED: 'team_submited'
 }
 class CreateForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
             confirmationCode: '',
-            phase: PHASES.SIGNUP,
+            phase: TEAM_PHASES.INIT,
             team: {
                 teamName: '',
                 companyName: '',
@@ -28,23 +28,23 @@ class CreateForm extends Component {
         const { teamName, companyName, email, minutes } = team;
         return (
             <Fragment>
-                {phase === PHASES.SIGNUP && (
+                {phase === TEAM_PHASES.INIT && (
                     <div>
                         <input name="teamName" defaultValue={teamName} onChange={this._onChangeTeam} placeholder="Team Name" className="form-control" />
                         <input name="companyName" defaultValue={companyName} onChange={this._onChangeTeam} placeholder="Company Name" className="form-control" />
                         <input name="email" defaultValue={email} onChange={this._onChangeTeam} placeholder="Email" className="form-control" />
                         <input name="minutes" defaultValue={minutes} onChange={this._onChangeTeam} placeholder="Total Minutes" className="form-control" />
-                        <button className="btn btn-primary mt-2" onClick={this._signup}>Submit team</button>
+                        <button className="btn btn-primary mt-2" onClick={this._submitTeam}>Submit team</button>
                     </div>
                 )}
-                {phase === PHASES.CONFIRM_EMAIL && (
+                {phase === TEAM_PHASES.SIGNED_UP && (
                     <div>
                         <p>You should recieve a confirmation code in your email</p>
                         <input name="confirmationCode" defaultValue={confirmationCode} onChange={this._onChange} placeholder="Confirmation Code" className="form-control" />
-                        <button className="btn btn-primary mt-2" onClick={this._confirmAccount}>Confirm</button>
+                        <button className="btn btn-primary mt-2" onClick={this._submitTeam}>Confirm</button>
                     </div>
                 )}
-                {phase === PHASES.COMPLETE && (
+                {phase === TEAM_PHASES.TEAM_SUBMITED && (
                     <div>
                         <p>YOU HAVE SUBMITTED YOUR TEAM!</p>
                     </div>
@@ -53,31 +53,57 @@ class CreateForm extends Component {
         )
     }
 
-    _completePhase(completedPhase) {
-        switch (completedPhase) {
-            case PHASES.SIGNUP:
-                return this.setState({ phase: PHASES.CONFIRM_EMAIL });
-            case PHASES.CONFIRM_EMAIL:
-                return this.setState({ phase: PHASES.SUBMIT_TEAM });
-            case PHASES.SUBMIT_TEAM:
-                return this.setState({ phase: PHASES.COMPLETE });
+    _submitTeam = () => {
+        const { phase } = this.state; //Variables
+        switch (phase) {
+            case TEAM_PHASES.INIT:
+                return __signup.bind(this)();
+            case TEAM_PHASES.SIGNED_UP:
+                return __confirmAccount.bind(this)();
             default:
-                return this.setState({ phase: PHASES.SIGNUP });
+                return;
         }
 
-    }
+        function __confirmAccount() {
+            const { team, confirmationCode } = this.state;
+            authService.verifyAccount(team.email, confirmationCode)
+                .then(results => {
+                    __completePhase(TEAM_PHASES.EMAIL_CONFIRMED);
+                    return __submitTeam()
+                })
+                .then(results => {
+                    __completePhase(TEAM_PHASES.TEAM_SUBMITED);
+                })
+                .catch(error => console.log("ERROR", error));
 
-    _confirmAccount = () => {
-        const { team, confirmationCode } = this.state
-        authService.verifyAccount(team.email, confirmationCode)
-            .then(results => {
-                this._completePhase(PHASES.CONFIRM_EMAIL);
-                return this._submitTeam()
-            })
-            .then(results => {
-                this._completePhase(PHASES.SUBMIT_TEAM);
-            })
-            .catch(error => console.log("ERROR", error));
+            function __submitTeam() {
+                const { team } = this.state;
+                return teamService.createTeam(team);
+            }
+        }
+
+        function __completePhase(completedPhase) {
+            switch (completedPhase) {
+                case TEAM_PHASES.SIGNED_UP:
+                    return this.setState({ phase: TEAM_PHASES.SIGNED_UP });
+                case TEAM_PHASES.EMAIL_CONFIRMED:
+                    return this.setState({ phase: TEAM_PHASES.EMAIL_CONFIRMED });
+                case TEAM_PHASES.TEAM_SUBMITED:
+                    return this.setState({ phase: TEAM_PHASES.TEAM_SUBMITED });
+                default:
+                    return this.setState({ phase: TEAM_PHASES.INIT });
+            }
+
+        }
+
+        function __signup() {
+            const { team } = this.state;
+            authService.signUp({ username: team.email, email: team.email, password: 'randomPassword123' })
+                .then(results => {
+                    __completePhase(TEAM_PHASES.SIGNED_UP);
+                })
+                .catch(error => console.log("ERROR", error));
+        }
     }
 
     _onChange = (event) => {
@@ -98,20 +124,6 @@ class CreateForm extends Component {
                 [name]: value
             }
         })
-    }
-
-    _signup = () => {
-        const { team } = this.state;
-        authService.signUp({ username: team.email, email: team.email, password: 'randomPassword123' })
-            .then(results => {
-                this._completePhase(PHASES.SIGNUP);
-            })
-            .catch(error => console.log("ERROR", error));
-    }
-
-    _submitTeam = () => {
-        const { team } = this.state;
-        return teamService.createTeam(team);
     }
 }
 
