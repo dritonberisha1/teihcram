@@ -2,6 +2,7 @@
 Easter challenge campaign for Alten
 * [Local Setup](#local-setup)
 * [Where is the Database](#where-is-the-database)
+* [Website & Admin pannel](#website-&-admin-pannel)
 
 ## Local setup
 
@@ -23,7 +24,7 @@ There is a local version of DynamoDB running as a docker container you can see y
 (Make sure the `localstack` & `dynamodb-admin` containers are up by running `docker ps`. To activate the containers if they are down `docker-compose up`)
 
 
-## React app
+## Website & Admin pannel
 
 ### React Services for landing page
 * `ChallengeService` 
