@@ -68,11 +68,11 @@ class CreateForm extends Component {
             const { team, confirmationCode } = this.state;
             authService.verifyAccount(team.email, confirmationCode)
                 .then(results => {
-                    __completePhase(TEAM_PHASES.EMAIL_CONFIRMED);
-                    return __submitTeam()
+                    __completePhase.bind(this)(TEAM_PHASES.EMAIL_CONFIRMED);
+                    return __submitTeam.bind(this)()
                 })
                 .then(results => {
-                    __completePhase(TEAM_PHASES.TEAM_SUBMITED);
+                    __completePhase.bind(this)(TEAM_PHASES.TEAM_SUBMITED);
                 })
                 .catch(error => console.log("ERROR", error));
 
@@ -100,7 +100,7 @@ class CreateForm extends Component {
             const { team } = this.state;
             authService.signUp({ username: team.email, email: team.email, password: 'randomPassword123' })
                 .then(results => {
-                    __completePhase(TEAM_PHASES.SIGNED_UP);
+                    __completePhase.bind(this)(TEAM_PHASES.SIGNED_UP);
                 })
                 .catch(error => console.log("ERROR", error));
         }

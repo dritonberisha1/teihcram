@@ -43,7 +43,7 @@ class LoginPage extends Component {
     _login = async () => {
         authService.login(this.state.email, this.state.password)
             .then(results => {
-                this.props.history.push('/admin/create-team');
+                this.props.history.push('/admin/dashboard');
             })
             .catch(error => console.log("ERROR", error));
     }
@@ -52,27 +52,11 @@ class LoginPage extends Component {
 function FirstBox() {
     return (
         <Fragment>
-            <h1>SIGN UP</h1>
-            <div>
-                <p className="m-0">
-                    Don't have an account?
-                    Sign up here to register your team and minutes.
-                </p>
-
-                <div className="d-flex flex-column">
-                    <Link to="/admin/sign-up" className="btn btn-third text-secondary">Sign up</Link>
-                </div>
-            </div>
+            <h1>RESET PASSWORD</h1>
             <div className="mt-4">
-                <p className="m-0">Forgot your passowrd?</p>
+                <p>Forgot your passowrd?</p>
                 <div className="d-flex flex-column">
                     <Link to="/admin/reset-password" className="btn btn-third text-secondary">Reset Password</Link>
-                </div>
-            </div>
-            <div className="mt-4">
-                <p className="m-0">Verify account.</p>
-                <div className="d-flex flex-column">
-                    <Link to="/admin/verify-account" className="btn btn-third text-secondary">Verify account</Link>
                 </div>
             </div>
         </Fragment>

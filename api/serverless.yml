@@ -118,6 +118,14 @@ functions:
           method: get
           cors:
             origin: "*"
+  fetch-companies:
+    handler: index.handler
+    events:
+      - http:
+          path: companies
+          method: get
+          cors:
+            origin: "*"
           authorizer:
             type: COGNITO_USER_POOLS
             authorizerId:

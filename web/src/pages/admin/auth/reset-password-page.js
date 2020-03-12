@@ -37,16 +37,7 @@ function FirstBox() {
     return (
         <Fragment>
             <div>
-                <h1>SIGN UP</h1>
-                <p>
-                    Don't have an account?
-                    Sign up here to register your team and minutes.
-                </p>
-                <div className="d-flex flex-column">
-                    <Link to="/admin/sign-up" className="btn btn-third text-secondary">Sign up</Link>
-                </div>
-            </div>
-            <div className="mt-4">
+                <h1>LOGIN</h1>
                 <p>Want to go back and login?</p>
                 <div className="d-flex flex-column">
                     <Link to="/admin/login" className="btn btn-third text-secondary">Login</Link>

@@ -1,7 +1,34 @@
 [
     {
-        "id": "randomString",
-        "email": "uniqueEmail",
-        "createdOn": "2019-10-04T08:17:41.629Z"
+        "teamName": "Some Team",
+        "id": "16d4700e-c2c9-4730-a29c-5582a9324519",
+        "createdOn": "2020-03-11T15:10:23.249Z",
+        "email": "dritonnaserberisha@gmail.com",
+        "minutes": "50",
+        "companyName": "Volvo"
+    },
+    {
+        "teamName": "Some other team",
+        "id": "26d4700e-c2c9-4730-a29c-5582a9324519",
+        "createdOn": "2020-03-11T15:10:23.249Z",
+        "email": "driton.berisha@gmail.com",
+        "minutes": "130",
+        "companyName": "Scania"
+    },
+    {
+        "teamName": "Gladiators",
+        "id": "36d4700e-c2c9-4730-a29c-5582a9324519",
+        "createdOn": "2020-03-11T15:10:23.249Z",
+        "email": "dritonnaserberisha@alten.com",
+        "minutes": "20",
+        "companyName": "Tele2"
+    },
+    {
+        "teamName": "The fittest",
+        "id": "46d4700e-c2c9-4730-a29c-5582a9324519",
+        "createdOn": "2020-03-11T15:10:23.249Z",
+        "email": "dritonnaserberisha@alten.se",
+        "minutes": "15",
+        "companyName": "Tele2"
     }
 ]

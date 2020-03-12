@@ -13,7 +13,7 @@ function AdminLayout(props) {
     return (
         <div>
             <Header />
-            <div className="container">
+            <div className="container-fluid">
                 {children}
             </div>
         </div>
