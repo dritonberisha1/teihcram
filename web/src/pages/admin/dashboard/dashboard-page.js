@@ -34,7 +34,7 @@ class DashboardPage extends Component {
     render() {
         const { companies = [], companiesWithTotal = [], teams = [], totalMinutes = 0, selectedCompany } = this.state || {}; //Variables
         return (
-            <div className="d-flex flex-column pt-lg-5 pt-3">
+            <div className="d-flex flex-column pt-lg-5 pt-3 mb-3">
                 <div className="d-flex flex-row flex-grow-1 bg-third justify-content-center py-5 px-4 mb-3 text-secondary">
                     <h1>TOTAL MINUTES: {totalMinutes}</h1>
                 </div>

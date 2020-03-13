@@ -16,7 +16,7 @@ Easter challenge campaign for Alten
      * You can go into a container by running `docker exec -it {container_name} bash`
      * You can see the conainer names by running `docker ps`
 
-* In the ops folder create new `local.env` and `prod.env` files based on `.env` file
+* In the ops folder create new `dev.env` and `prod.env` files based on `.env` file
 * After these steps are done you can run `npm start` in their respective conainers for the Api and Web.
 
 ## Where is the Database?

@@ -194,23 +194,16 @@ resources:
       Type: "AWS::DynamoDB::Table"
       Properties:
         AttributeDefinitions:
-          - AttributeName: id
-            AttributeType: S
           - AttributeName: email
             AttributeType: S
+          - AttributeName: minutes
+            AttributeType: S
         KeySchema:
-          - AttributeName: id
+          - AttributeName: email
             KeyType: HASH
-        GlobalSecondaryIndexes:
-          - IndexName: emailIndex
-            KeySchema:
-              - AttributeName: email
-                KeyType: HASH
-            Projection:
-              ProjectionType: ALL
-            ProvisionedThroughput:
-              ReadCapacityUnits: 5
-              WriteCapacityUnits: 5
+          - AttributeName: minutes
+            KeyType: RANGE
+    
         ProvisionedThroughput:
           ReadCapacityUnits: 5
           WriteCapacityUnits: 5
