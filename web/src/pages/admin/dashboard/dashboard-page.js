@@ -84,8 +84,8 @@ class DashboardPage extends Component {
     _fetchTeams = () => {
         const { teams, selectedCompany } = this.state;
         if (selectedCompany)
-            return teams.filter(team => team.companyName === selectedCompany);
-        return teams;
+            return teams.filter(team => team.companyName === selectedCompany).sort((a, b) => b.minutes - a.minutes);
+        return teams.sort((a, b) => b.minutes - a.minutes);
     }
 
     _onChangeCompany = (event) => {

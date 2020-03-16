@@ -96,16 +96,14 @@ functions:
       - http:
           path: analytics
           method: get
-          cors:
-            origin: "*"
+          cors: true
   create-team:
     handler: index.handler
     events:
       - http:
           path: teams
           method: post
-          cors:
-            origin: "*"
+          cors: true
           authorizer:
             type: COGNITO_USER_POOLS
             authorizerId:
@@ -116,16 +114,14 @@ functions:
       - http:
           path: teams
           method: get
-          cors:
-            origin: "*"
+          cors: true
   fetch-companies:
     handler: index.handler
     events:
       - http:
           path: companies
           method: get
-          cors:
-            origin: "*"
+          cors: true
           authorizer:
             type: COGNITO_USER_POOLS
             authorizerId:
@@ -203,7 +199,6 @@ resources:
             KeyType: HASH
           - AttributeName: minutes
             KeyType: RANGE
-    
         ProvisionedThroughput:
           ReadCapacityUnits: 5
           WriteCapacityUnits: 5

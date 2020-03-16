@@ -17,6 +17,7 @@ Easter challenge campaign for Alten
      * You can see the conainer names by running `docker ps`
 
 * In the ops folder create new `dev.env` and `prod.env` files based on `.env` file
+* You need to get the `aws access key` and `secret access key` from one of the developers.
 * After these steps are done you can run `npm start` in their respective conainers for the Api and Web.
 
 ## Where is the Database?
