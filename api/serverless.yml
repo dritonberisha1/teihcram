@@ -19,12 +19,16 @@ plugins:
   - serverless-dynamodb-local
   - serverless-plugin-split-stacks
 
+package:
+  include:
+    - ./templates/**
 
 provider:
   name: aws
   runtime: nodejs12.x
   region: ${env:AWS_REGION}
   stage: ${opt:prod, dev}
+  role: arn:aws:iam::064382240297:role/lamda-easter-challenge
   versionFunctions: false
   tracing:
     apiGateway: true
@@ -55,6 +59,10 @@ custom:
             sources: [./data/seed/dev-companies.json]
           - table: ${env:AWS_DYNAMODB_TEAMS_TABLE_NAME}
             sources: [./data/seed/dev-teams.json]
+      dev:
+        sources:
+          - table: ${env:AWS_DYNAMODB_COMPANIES_TABLE_NAME}
+            sources: [./data/seed/dev-companies.json]
       
 # you can overwrite defaults here
 #  stage: dev
@@ -122,10 +130,6 @@ functions:
           path: companies
           method: get
           cors: true
-          authorizer:
-            type: COGNITO_USER_POOLS
-            authorizerId:
-              Ref: Authorizer
 
 resources:
   Resources:

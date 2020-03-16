@@ -1,17 +1,1227 @@
 [
     {
-        "id": "16d4700e-c2c9-4730-a29c-5582a9324511",
-        "createdOn": "2019-10-04T08:17:41.629Z",
-        "name": "Volvo" 
+       "id":"c21e188a-187d-40ae-9c1b-d7c5e78daedc",
+       "name":"3M Svenska AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
     },
     {
-        "id": "16d4700e-c2c9-4730-a29c-5582a9324512",
-        "createdOn": "2019-10-04T08:17:41.629Z",
-        "name": "Tele2" 
+       "id":"b62b1fde-f27e-40d9-ab2b-1934006262c0",
+       "name":"ABB AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
     },
     {
-        "id": "16d4700e-c2c9-4730-a29c-5582a9324513",
-        "createdOn": "2019-10-04T08:17:41.629Z",
-        "name": "Scania" 
+       "id":"d7ea3d74-4c89-42f5-8dc1-590dfa3e0a34",
+       "name":"ABB POWER GRIDS SWEDEN AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"c52eadbe-2d23-45fc-8d67-b515aee3f666",
+       "name":"ACTIA NORDIC AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"e10eabdd-20b8-4648-a49a-cacce1551fc6",
+       "name":"AGRISERA AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"0e675269-6f7a-4da2-8125-99f373e415b0",
+       "name":"Airborn Hydragaphy AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"06a06c81-dc29-4cfa-b3ac-7f6c74967d75",
+       "name":"Alats Technologies AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"19403183-2f0c-424b-8013-4e6ab2e76113",
+       "name":"Alfa Laval Copenhagen A/S",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"5beabc88-2437-4413-a940-ae141764282a",
+       "name":"Alimak Group Sweden AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"075a1466-e78a-4765-9e8d-af7a2f2e9920",
+       "name":"Allytec AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"5ac46222-e4f2-4f86-8987-bdf10afbbff4",
+       "name":"ALSTOM TRANSPORT DANMARK A/S",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"9885d4db-10ea-484b-9fd7-abed5363bbe5",
+       "name":"Alte Oy",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"ad93b929-354f-4dbb-b44c-1cbd4acfffbd",
+       "name":"ALTEN ITALIA SPA",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"11851069-8ec3-492f-8f0b-e4167b961a03",
+       "name":"Alten Sweden AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"8e7e7d18-3fb8-4c96-b425-13ef13f9e73d",
+       "name":"Altered Stockholm AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"5e333fe2-0bca-43ea-8010-d5da2c523ec3",
+       "name":"AMBULANSPRODUKTION I SANDVIKEN AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"c586abec-0b78-4992-85d7-b5976d698145",
+       "name":"Amicoat AS",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"81380843-1c42-4002-88df-0d1da70ccd65",
+       "name":"ANTAROS RENOSTIC AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"15b860b0-9973-4876-9660-cb781694fe7a",
+       "name":"APOTEK PRODUKTION & LABORATORIER AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"c40d9791-4944-44da-8541-1be1d46b56f7",
+       "name":"AQ Components Västerås AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"2137986e-0fea-4256-9802-660f62bf2c68",
+       "name":"ARCCORE",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"b25dc166-067c-4b03-9fa9-cd193ea00e80",
+       "name":"ARCOMA AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"ce9fd464-0aca-4a21-b6a1-75a476b65ca1",
+       "name":"Aros Electronics AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"a3236004-fca5-44a9-a30a-7c9c453acba4",
+       "name":"Ascom Sweden  AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"99f9165c-1887-4a7a-a2ac-315870bf536a",
+       "name":"ASSA ABLOY AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"25cda4c0-9343-4e86-9658-bbf109a0370a",
+       "name":"ASSA ABLOY ENTRANCE SYSTEMS PRODUCTION SKELLEFTEÅ AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"c8c4067b-786f-43b0-93a5-14fa31fa3218",
+       "name":"ASTRAZENECA AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"08f3ccd7-3ec6-479e-9acb-51340f502c85",
+       "name":"ATLAS COPCO INDUSTRIAL TECHNIQUE AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"ecddfb4f-55cd-41f7-9125-373069a8b78e",
+       "name":"Attends Healthcare AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"8a1a5f4b-0841-4846-bdaf-3caa54bd1a55",
+       "name":"Autida AB   ",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"2a035246-57b6-4a73-b50d-c6e5e0a82ab8",
+       "name":"AUTOLIV SVERIGE AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"3b2d21fc-d6a9-4eed-a700-b6680d97bfd0",
+       "name":"AVALON INNOVATION TECHNOLOGY AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"4ef849c4-e2b7-464f-9981-58b4f91c0e24",
+       "name":"AXIS COMMUNICATIONS AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"c92e193e-42ac-4cf1-8bef-72325fd42506",
+       "name":"Beamon People AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"1f101c30-ee1e-4d11-b529-beaa89adaaea",
+       "name":"BIOLIT AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"ce03e52f-898b-4082-a1f3-7dd3df4d9e27",
+       "name":"Biovica International AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"ca6a2784-6936-4415-8948-3528eaee8ab6",
+       "name":"BOMBARDIER TRANSPORTATION SWEDEN AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"cedbfee9-eef0-4d31-b021-f79bab2d021e",
+       "name":"BORG WARNER TORQ TRANSFER SYSTEMS AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"b8fe0336-2808-4e3a-b9f1-ad68dedab4c8",
+       "name":"CANNSEAL AS",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"d23cf75c-0c54-4ec6-9428-d8cd280e85ca",
+       "name":"Cardiaccs AS",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"82426b60-a2c2-47f4-9770-8218c0a868b3",
+       "name":"CareLigo AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"0b04220c-cf71-44b5-b822-c03647d440c6",
+       "name":"CATERPILLAR PROPULSION PRODUCTION AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"4b4b7265-25d7-44e5-a795-8d583001d33e",
+       "name":"CENTRALA STUDIESTÖDSNÄMNDEN",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"4cdcf2bf-6819-49ce-b529-9d8fbdf5c25d",
+       "name":"ChalmersTekniska Högskola",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"224cd725-ce46-47a8-b8a6-a702976c7417",
+       "name":"Chargestorm AB ",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"673e8a48-9fef-4c8d-8828-17d83ccabc54",
+       "name":"Cheif Consulting AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"a62931e6-e471-4e93-b2d6-4fd14fc7b8ee",
+       "name":"China-Euro Vehicle Technology AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"075ad44d-27cc-475a-b599-11013791c15f",
+       "name":"ChordateMedical AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"7518a423-16be-46d4-896f-2f4af8ca360b",
+       "name":"COCHLEAR BONE ANCHORED SOLUTIONS AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"4665c809-508a-40dc-b5cd-4b80e683fb82",
+       "name":"COMBITECH AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"582ad2d4-d387-46ef-9872-f58079d497ae",
+       "name":"CONTEXTVISION AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"58fff6e6-0529-4bc3-a3a4-bde9ad5bc61f",
+       "name":"CONTINENTAL AUTOMOTIVE GMBH",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"c083d09f-bfbf-454f-aadc-60e3d922d7fa",
+       "name":"COREBON  AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"122cb992-d0c5-4bed-8478-fdc97c14b070",
+       "name":"CORPOWER OCEAN AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"c36f6c27-b1d9-4838-95a8-87b27a58702f",
+       "name":"C-Rad Positioning AB ",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"c0bdfb62-5d60-4fbc-9f71-b87966f65ba0",
+       "name":"CSAM KIBI AB ",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"b3537166-2d01-4ea9-a6d9-78c37e01e641",
+       "name":"Dassault Systemes AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"646a3626-0fa6-40ba-9345-a7f8404a81ef",
+       "name":"DENSO SALES SWEDEN AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"188908a6-d5d0-433f-b5a3-275f0bef4a82",
+       "name":"DENTSPLY IH AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"86e36bb7-b2db-43fa-9fe3-c2b2287c837a",
+       "name":"Devair AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"a219453c-7870-4043-9e6d-fa4b2f46b1bc",
+       "name":"Doctrin AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"c9122875-5e36-43ea-8273-e81857d572e5",
+       "name":"E-AAM DRIVLINE SYSTEMS AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"32712043-8723-450a-b0fd-cee3ec66ce98",
+       "name":"Electrolux AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"d5072579-56cc-40ad-bd76-dd9a5f2ec161",
+       "name":"Electrolux Floor Care & Light Appliances AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"c39c0e7b-43ca-4227-afd4-08d6e16812e7",
+       "name":"ELEKTA INSTRUMENT AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"ec4b753b-6926-4b26-9ea6-96ae47c49cf8",
+       "name":"ELLEVIO AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"71572bd0-27e1-487c-8509-2adaf406ab63",
+       "name":"Engcon Holding AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"8c68d91d-8342-4935-acc8-5c786d7426de",
+       "name":"Envac Norge AS",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"666a0600-54a9-4e11-ba06-c49dcb7e8e13",
+       "name":"Envirotainer Engineering AB ",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"e7524c10-3023-41f2-ad20-c9070d7c7f9d",
+       "name":"EPIROC ROCK DRILLS AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"def45c98-9cbf-4082-a8c0-06c8ef97e216",
+       "name":"Ericsson AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"a78b5bd0-5d54-4859-94d5-08637d843d8b",
+       "name":"ES Medical",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"551f9063-dbf3-4f79-b2bc-d16183e4ef91",
+       "name":"Ettiketto AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"93e87519-c235-4ee1-af04-02ecccbfc6d0",
+       "name":"eWork Group AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"f7026d48-276c-42f0-be8f-4d0cbc9ac0cc",
+       "name":"Exeger Operations AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"0982c57e-f329-4770-bc10-af79acd0ba13",
+       "name":"Ferruform AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"df3d2743-4c49-4cce-9dad-9dd6df8fa2e1",
+       "name":"FLIR Systems AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"b580a6e5-40a1-4409-91a1-21146ae67b3a",
+       "name":"FLIR SYSTEMS POLYTECH AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"f7305d09-a68c-40c0-8b3f-c89d171597bb",
+       "name":"Flokk AB ",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"22e37143-a6a8-4610-b864-93cbd5cfbe2c",
+       "name":"FORSMARKS KRAFTGRUPP AKTIEBOLAG",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"a4c51dc9-0d64-4f5a-a06e-f5a37b6fb380",
+       "name":"FRESH AIR VENTILATION I UPPSALA AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"b86cd35e-e93d-4aaf-b744-fa62d50a1ba6",
+       "name":"FUMEX AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"323e2847-7473-497c-88bb-cbebbbd435bf",
+       "name":"Furhat Robotics AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"bc1800fb-cd68-4921-9c9a-d4591893079b",
+       "name":"GE HEALTHCARE BIO-SCIENCES AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"ac8f5714-ffcb-464e-8cd2-ed1a3088f6e9",
+       "name":"GETINGE AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"ddf47405-3678-46aa-9f8e-5bb169637f5f",
+       "name":"GETINGE STERILIZATION AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"17cc6072-7dd1-410e-bad1-c408bb6c24e8",
+       "name":"GKN AEROSPACE SWEDEN",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"9a2af6c4-f43c-463e-ba6d-e22569ffd9e2",
+       "name":"GKN DRIVELINE KÖPING AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"4ad7577d-6454-4c9c-8af3-31b6f01fe071",
+       "name":"GMV Sweden AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"9e262fbc-0f36-4417-a90f-ba65757912ff",
+       "name":"Gradientech AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"f73a5f80-f86a-44d3-8124-1487284dec31",
+       "name":"Green Landscaping",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"aae166a2-fb28-4712-a791-d4dd18a38884",
+       "name":"GUIDELINE GEO AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"587b42d1-c81b-41c4-bffb-2430e4428dcf",
+       "name":"Gyros Protein Technologies AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"8450227f-1626-4730-b82b-24e1f9acbe24",
+       "name":"GÖTEBORGS STAD",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"2d826189-69e4-4df9-857f-a13e4a8669e0",
+       "name":"GÖTEBORGS STIFT",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"a3c4e552-c6e6-45da-a2ff-c9a64af31a22",
+       "name":"GÖTEBORGS UNIVERSITET",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"df81ae98-e062-4cb0-b0ea-f1be027e9611",
+       "name":"HALDEX BRAKE PRODUCTS AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"0d03c30f-faf6-449e-b8b6-2e2eb892c888",
+       "name":"Handicare AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"f5cc7abe-ae84-4117-9bc1-a300ab0ea97d",
+       "name":"HI3G ACCESS AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"820a9e8c-287a-43df-99dc-89bba3178a70",
+       "name":"HULTAFORS GROUP",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"aa5475e7-5f29-48b6-9892-e31352449581",
+       "name":"HUMPHREE AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"f08b198b-51f8-4fea-b1b1-73af20bbab24",
+       "name":"HUSQVARNA AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"cae12c6f-ffcf-4265-b0cd-8dce30bec528",
+       "name":"IDA INFRONT AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"87f347db-7d45-49b4-bc7a-8484710011ef",
+       "name":"IKEA OF SWEDEN AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"3c742dfa-34a5-44e2-810d-5fd5ca10e39c",
+       "name":"Industri Matematik International AB ",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"3f442936-e066-433e-9375-8cee12a812c9",
+       "name":"Innovation Zed Ltd.",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"f22520f3-9059-460c-9522-729e0d84adab",
+       "name":"IOGT-NTO 4649 FUNBO UPPSALA",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"8b2e3d4e-6699-4489-a393-ce42554720a6",
+       "name":"IT-Högskolan Sverige AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"52349afc-ab67-4fd4-8275-b1af1e41dfe7",
+       "name":"KAPSCH TRAFFICCOM AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"e3df3a9d-404c-4727-9d92-63e412945248",
+       "name":"Kelly Services",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"acdf3ca9-f154-4838-9888-4d7434f22cfe",
+       "name":"KEY MAN AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"29bc5088-6c38-4222-a263-5fd97c9cf2e1",
+       "name":"KONE Oyj",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"71298acc-56a5-4ced-9d9f-b1830423046b",
+       "name":"Kongsberg Automotive AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"59f08aff-9768-490b-b9db-366af4f3ab4e",
+       "name":"Lifecare AS",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"c842f6c7-88a7-4208-a0f8-0b32733e98dc",
+       "name":"LIKO AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"2ef0103a-3922-4b38-ba66-e3559b9c295b",
+       "name":"Likvor AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"aff55568-ff29-4a61-9b4e-843553372249",
+       "name":"LINDEX AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"ae010307-d043-4209-b051-f1d7f4231725",
+       "name":"Lynk & Co International AB ",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"08a61892-f36b-4577-b00b-d919b8dbcf54",
+       "name":"MAN DIESEL & TURBO SVERIGEAB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"c9372369-b8ed-4cde-b536-b6ac972b67bd",
+       "name":"Maquet Critical CareAB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"3f88700e-aa63-4b29-8680-e8442a5258da",
+       "name":"Medistim ASA",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"4d836c27-60f7-4fc5-8b06-178a19c6185a",
+       "name":"MegaNews Sweden AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"8598bd3e-abbf-4e24-a1ab-cb9b1c3fe95c",
+       "name":"MEONE KONSULTFÖRMEDLING AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"adabc7c0-08a0-42d3-8f97-c7e5a97a02cf",
+       "name":"Modine Söderköping AB.",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"0e2c9f9b-fbcf-44f6-ab35-e236af6e580a",
+       "name":"Momin AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"3705f1b5-c002-4096-afea-a9a1eded5956",
+       "name":"Multi4 AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"dfc36955-20a2-49fe-aa34-10b901e45f4b",
+       "name":"MYCRONIC AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"073befd0-78ac-4aeb-b833-a73f0289625b",
+       "name":"MYFC AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"61b2ca89-f2e7-44af-b157-430b3fb2212c",
+       "name":"Mälarenergi AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"c3fd0313-6e8e-42cf-9528-5c06d43073dd",
+       "name":"MÖLNLYCKE HEALTH CARE AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"ebe0cb73-8ea1-4a13-8edd-3f722f1ce388",
+       "name":"Nikita AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"ef5e043b-d982-4aa4-8b8f-a8a2ac65c479",
+       "name":"NORSK INSTITUTT FOR NATURFORSKNING",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"e30a8c02-d846-4807-8205-4de6b40294fe",
+       "name":"Northvolt AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"b4df1763-1bea-4046-ab65-fbdd92ef2e7d",
+       "name":"Odyssea Pharma SPRL",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"5f481c29-b0fd-4c10-8a2e-ff26a2abd2f3",
+       "name":"OnDosis",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"14d0da0f-e4fe-4f15-98b0-06642736f370",
+       "name":"OPTRONIC PARTNER PR AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"cda530e2-cc06-49f9-8389-bf3d2bb7a808",
+       "name":"Orexo AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"49725a03-402d-475f-8dd0-5b04544de06a",
+       "name":"Ossdsign AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"1893b449-bec7-47ef-9173-30cee2e1e622",
+       "name":"Ostomycure AS",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"626a1301-526f-433a-a6ef-6e9291d755a1",
+       "name":"OTICON MEDICAL AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"544c0354-4688-4fc3-b270-7cfcf97d308b",
+       "name":"Otivio AS",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"9b703338-6e1d-4a30-9356-fc1aee880290",
+       "name":"Pellagor Sverige AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"89804650-02a7-427c-ba4a-f53864cf4795",
+       "name":"PERIMED AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"e16007dc-5c98-47e0-95e0-3efe1415c28c",
+       "name":"PERSTORP AKTIEBOLAG",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"8b476598-0316-4152-ac33-0f53c5e6c214",
+       "name":"Phadia AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"ebbe29ff-66aa-4bfa-91c4-4a95442f39c4",
+       "name":"POLESTAR PERFORMANCE AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"ad23ae77-8655-4af6-a80f-4f99e663e98b",
+       "name":"POLYMIRA AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"a7fa2f6f-9a81-449a-89c9-aa4252033874",
+       "name":"Preh Sweden AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"74e9f0fe-45fa-4ecd-866a-f5929511ec8d",
+       "name":"PROFOTO AKTIEBOLAG",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"1cc52d70-8e7f-4666-b840-6ee314955e2b",
+       "name":"Prosidius AS",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"a56c1f15-a1df-45fb-ace5-0b82dedfbb70",
+       "name":"Qbtech AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"30261206-413a-4503-9446-2c8b5e71f7c2",
+       "name":"QMATIC AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"adfba7dd-8b8e-4fef-8d39-a4c320e83cc1",
+       "name":"QUINTUS TECHNOLOGIES AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"a1014f7f-2345-4c0f-836e-9bfe21cc13ca",
+       "name":"RAMBÖLL SVERIGE AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"d11d011a-d735-47c0-aef8-cdeb5b510fbb",
+       "name":"Randstad Sourceright AB ",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"011cca1c-ad0c-4c3b-b508-1a5232ff0274",
+       "name":"RCO Security AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"d388c09d-a020-487d-b5e6-b74b7bee10b3",
+       "name":"RemovAid",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"33c2af09-b735-450c-b462-10764ed2ee25",
+       "name":"RENHOLMEN AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"94e15105-d487-4270-aefa-3d19cb1aff90",
+       "name":"Ringhals AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"d134c6c8-8158-42cb-b93a-b0e743095624",
+       "name":"RMBLSTRIP AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"fe13db1b-ec86-4536-af9c-70b4928c1a89",
+       "name":"ROL ERGO AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"d8453e16-ba98-43d3-8ba4-6b42d72f98e0",
+       "name":"Rolls-Royce AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"ffbdcf25-2607-4a86-8637-71b49a33d09e",
+       "name":"SAAB AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"9f5af2f4-edcc-41a4-9f49-3f2385721ec6",
+       "name":"SAAB DYNAMICS AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"0a307d57-29f2-4c70-8935-b5edf2f4870c",
+       "name":"SAAB KOCKUMS AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"7f0aaaca-c8a4-40c5-b290-c9fdb31b0db6",
+       "name":"SCA Hygiene Products AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"a1880fbc-8715-41e5-ac9d-671992e5c704",
+       "name":"Scania CV AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"ab165bd5-d54a-4054-9aa3-b5650c452f6e",
+       "name":"SCANIA IT AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"edbe6151-5955-4ed2-a398-2e8b01ce9002",
+       "name":"SCIBASE",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"d4eb8665-feac-406b-892b-a8184783ff57",
+       "name":"Scienta Sensor systems AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"f6e94953-046e-4a7d-bdf1-68ad6067bf15",
+       "name":"SeaTwirl AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"54ecda31-79fd-40c2-9f12-5fcab0973f0a",
+       "name":"Seebreath AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"cb3f7884-ff74-4080-89c3-916362bc1293",
+       "name":"SEMCON SWEDEN AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"a6ed04fd-37d4-44f5-b52a-102bdfb2862d",
+       "name":"SGW SWEDEN AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"5d47a98d-d8e2-41ec-b6d5-e5a0a1e7f6ca",
+       "name":"SHL GROUP AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"19ecc15d-9709-4f78-937c-98bb20d3a188",
+       "name":"Sigmastocks AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"7725a82f-cdaa-4e48-bb9a-88bab77ed9a8",
+       "name":"SKF AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"bd5ab99d-1134-42e4-b87f-5d34eed4280c",
+       "name":"SKF SVERIGE AKTIEBOLAG",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"0809c783-336a-4c63-86e5-60c802b3177a",
+       "name":"SOURCING NETWORK STOCKHOLM AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"c61585d9-ef48-4fdb-9bd9-e77a5b3c8870",
+       "name":"Spectro Analytic Irradia AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"2b7ace42-2cb9-428e-890b-7d4c8482fbc0",
+       "name":"SSPA SWEDEN AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"972b12d5-3f8a-462e-ac2b-deb437206af3",
+       "name":"Stendals El AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"ff644f66-c457-4579-a83b-eb0255670952",
+       "name":"Stiftelsen Adopticum",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"f91e85f6-c1e9-43e6-b42d-5082453d24fb",
+       "name":"STILLE AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"66571238-c82a-4dd5-a6aa-a571eb5a69a0",
+       "name":"Stockholms Läns Landsting",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"9f7ec53b-4650-4e8a-a116-a7f684d76ad7",
+       "name":"STONERIDGEELECTRONICS AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"331d436e-7374-48a4-a3f1-d47eff7a6f3a",
+       "name":"Sunds Fibertech AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"b7a3395f-0356-4f61-8c1c-25f799a52c86",
+       "name":"SWEGON OPERATIONS AKTIEBOLAG",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"e12455f5-6447-458a-bfa3-c5a775dc7978",
+       "name":"SVENSK KÄRNBRÄNSLEHANTERING AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"0760305d-85dd-4577-9195-62687695b5f8",
+       "name":"Svenska Lager slab AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"2a65cc78-94c6-4bda-83c3-2653b6872d6f",
+       "name":"SWISSLOG-ACCALON AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"2bb9108a-70d2-4302-b835-23ecc3e6932e",
+       "name":"T ENGINEERING AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"f14def36-ed6f-4582-927e-0700728f4561",
+       "name":"Tada Medical AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"a78d1820-f847-49d1-bccd-507fe2c548bb",
+       "name":"TE Connectivity Svenska AB ",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"d7119458-95c6-4683-9c6e-c23ed8590d02",
+       "name":"THULE SWEDEN AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"dbefa5a0-f3bb-4c29-90c3-f76de8a72178",
+       "name":"Tingent AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"7748427b-05d5-4844-b0a7-0b0f7247260b",
+       "name":"TOBII AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"de165633-ffc1-4d4d-adce-9a49f4facee1",
+       "name":"Tobii Tech AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"79f200f5-dea9-4863-90c1-aa8620d91056",
+       "name":"Tooltech Töre AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"0e853af9-81a7-431a-8665-4ce6949dbf55",
+       "name":"TR EQUIPMENTAB ",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"5a13f5a7-c6ed-4a98-8b27-9646d198b3f6",
+       "name":"TRANSDEV SVERIGE AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"a752e777-0909-40b2-b1e4-5a6f9bcd158d",
+       "name":"Trimble AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"90842bb2-5bf2-4f5d-8fce-f27e2af272ce",
+       "name":"Trimble Sweden AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"88cbabd8-283a-47ff-aad7-74c6dae384a9",
+       "name":"UMEÅ ENERGI AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"c7e2f6ad-4dd6-4824-bc79-8677a7a13fb6",
+       "name":"Umeå Kommun",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"99e26c32-0503-4c3b-8677-259a40d1affe",
+       "name":"UMEÅUNIVERSITET",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"83bbf8fa-a6d8-4a35-9297-30139a569d38",
+       "name":"UMS SKELDARSWEDEN AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"2cc08329-5e11-41a0-bdfc-c2048f4a2e3a",
+       "name":"Waiting for customer creation",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"5a82f3a8-5663-43e6-8097-6997b906a54d",
+       "name":"VALMET AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"af2acb92-4161-42df-a5a5-2e88fa3470be",
+       "name":"VATTENFALL AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"72e0f8e0-6cb2-4594-b2d8-c42ec40f7382",
+       "name":"WEDHOLMS AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"75cfead3-cff2-4b88-9bb4-c7dbf55f32a3",
+       "name":"Veoneer Sweden AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"464ad82e-477f-48fb-b8e3-157aa2de5cf4",
+       "name":"Veoneer Sverige LiDAR AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"8c9906ec-257f-49de-a41a-25fae025dff8",
+       "name":"Westinghouse Electric Sweden AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"a436cc22-40bc-48d0-b944-f294672022a7",
+       "name":"WEXIÖDISK AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"c6c66a3c-1f58-4ee3-bc25-c56e4254ea1b",
+       "name":"VINNOVA",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"3aad94e3-3a7c-4637-9614-fe06cafc9420",
+       "name":"Volvo Bussar AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"e8dac069-58cb-4a57-8804-6123801bb685",
+       "name":"VOLVO BUSSAR UDDEVALLA AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"ab3f2a50-a197-4cda-b5be-fce22373171b",
+       "name":"VOLVO CONSTRUCTION EQUIPMENT AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"39867cdf-de3e-4934-a8d0-db7e2798d6f9",
+       "name":"Volvo Group Connected Solutions AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"35310fd0-ae57-4c16-a41e-5e63f48d311a",
+       "name":"VOLVO GROUP PURCHASING AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"cba92329-7c99-4e00-8807-d76a9972fdf3",
+       "name":"Volvo Information Technology AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"3e0d0fe0-0702-42cf-b538-d544dfe77064",
+       "name":"VOLVO LASTVAGNAR AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"67296bd9-f3ec-4ee6-b3ec-f9a1b605eeb3",
+       "name":"Volvo Logistics AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"22e3fd59-37ce-4e62-8761-1a468c965443",
+       "name":"Volvo Parts AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"106e63a9-b415-4528-b829-54535aae53e3",
+       "name":"Volvo Penta AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"38e6172f-4f43-48c3-9e4a-31fad71f8376",
+       "name":"Volvo Personvagnar AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"4bb25ee7-70e7-4819-9771-726e82c4eb17",
+       "name":"Volvo Powertrain AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"ea3dd6ef-0a2e-4874-9430-2bdd522f5a64",
+       "name":"VOLVO TECHNOLOGY AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"3f3016bd-8837-4519-8ef6-59d09d1128e7",
+       "name":"Workforce Logic",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"e360b132-061a-46f1-9ef2-9f6b3b62be11",
+       "name":"VÄDERSTAD AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"e23f3f23-07b9-4c64-8180-83d8ffc671a8",
+       "name":"VÄSTSVENSKA HANDELSKAMMAREN SERVICE AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"4c69eb7d-5a61-49bd-ba31-5d03fb0102f9",
+       "name":"X Concept AB ",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"98946b44-1155-47cf-b267-cc010670c2f4",
+       "name":"XDIN INC",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"a0fa9a0d-fa9c-45dd-abcc-121cfe487846",
+       "name":"XLENT NORR AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"7a8186f2-816c-4e06-bd9f-a5a9570ac366",
+       "name":"YAYRKESHÖGSKOLA AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"96dcfa79-ee3f-4901-a074-5c2814c084ab",
+       "name":"YARA MARINE TECHNOLOGIES AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"31af5795-3f05-4f2f-a38a-4d88c31e797e",
+       "name":"ZENUITY AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"c14751a5-3e0c-47e1-955c-3a4c8b06e097",
+       "name":"Zeptagram AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"4f69a431-a097-481b-9434-3980fccccefa",
+       "name":"Zound Industries AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"1cb04d21-e62e-4d91-8bf3-3cb1e87acf61",
+       "name":"ÅF Digital Solutions AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"0980ee5d-e67e-4d95-b6e7-d55dd3d4219f",
+       "name":"ÅF INDUSTRY AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"933544ed-8b20-4a22-bad9-68eb53323cdb",
+       "name":"ÅF TECHNOLOGY AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"bbcaceb4-7368-481a-825f-085c7046e761",
+       "name":"ÅLÖ AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
+    },
+    {
+       "id":"252ca42e-d975-4e6f-8c0f-30779da110d1",
+       "name":"Öhlins Racing AB",
+       "createdOn":"2020-03-13T12:21:24.519Z"
     }
-]
+ ]

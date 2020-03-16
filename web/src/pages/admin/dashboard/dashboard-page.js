@@ -77,7 +77,7 @@ class DashboardPage extends Component {
                         totalMinutes = parseInt(totalMinutes) + parseInt(team.minutes)
                 })
             })
-            return resolve({ companiesWithTotal, totalMinutes });
+            return resolve({ companiesWithTotal: companiesWithTotal.sort((a, b) => b.totalMinutes - a.totalMinutes) , totalMinutes });
         })
     }
 
