@@ -1,118 +1,120 @@
 import React, { Component, Fragment } from 'react';
 import authService from '../services/auth-service';
 import teamService from '../services/team-service';
+import companyService from '../services/company-service';
+import employeeService from '../services/employee-service';
 
-const TEAM_PHASES = {
-    INIT: 'initial',
-    SIGNED_UP: 'signedUp',
-    EMAIL_CONFIRMED: 'email_confirmed',
-    TEAM_SUBMITED: 'team_submited'
-}
 class CreateForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            confirmationCode: '',
-            phase: TEAM_PHASES.INIT,
+            companies: [],
+            validation: {},
             team: {
                 teamName: '',
                 companyName: '',
                 email: '',
                 minutes: ''
-            }
+            },
+            teamSubmitted: false
         }
     }
 
+    async componentDidMount() {
+        const companies = await companyService.fetchCompanies();
+        this.setState({ companies });
+    }
+
     render() {
-        const { confirmationCode, phase, team } = this.state //Variables
+        const { companies = [], errorMessages = [], team, teamSubmitted } = this.state //Variables
         const { teamName, companyName, email, minutes } = team;
         return (
             <Fragment>
-                {phase === TEAM_PHASES.INIT && (
+                {!teamSubmitted && (
                     <div>
+                        {errorMessages.map(message => (
+                            <div class="alert alert-danger" role="alert">
+                                {message}
+                            </div>
+                        ))}
                         <input name="teamName" defaultValue={teamName} onChange={this._onChangeTeam} placeholder="Team Name" className="form-control" />
-                        <input name="companyName" defaultValue={companyName} onChange={this._onChangeTeam} placeholder="Company Name" className="form-control" />
+                        <select name="companyName" defaultValue={companyName} onChange={this._onChangeTeam}>
+                            <option value="">Select a Company</option>
+                            {companies.map(company => (
+                                <option key={company.name} value={company.name}>{company.name}</option>
+                            ))}
+                        </select>
                         <input name="email" defaultValue={email} onChange={this._onChangeTeam} placeholder="Email" className="form-control" />
-                        <input name="minutes" defaultValue={minutes} onChange={this._onChangeTeam} placeholder="Total Minutes" className="form-control" />
+                        <input type="number" name="minutes" defaultValue={minutes} onChange={this._onChangeTeam} placeholder="Total Minutes" className="form-control" />
                         <button className="btn btn-primary mt-2" onClick={this._submitTeam}>Submit team</button>
                     </div>
                 )}
-                {phase === TEAM_PHASES.SIGNED_UP && (
+                {teamSubmitted && (
                     <div>
-                        <p>You should recieve a confirmation code in your email</p>
-                        <input name="confirmationCode" defaultValue={confirmationCode} onChange={this._onChange} placeholder="Confirmation Code" className="form-control" />
-                        <button className="btn btn-primary mt-2" onClick={this._submitTeam}>Confirm</button>
-                    </div>
-                )}
-                {phase === TEAM_PHASES.TEAM_SUBMITED && (
-                    <div>
-                        <p>YOU HAVE SUBMITTED YOUR TEAM!</p>
+                        <p>Team has been submitted</p>
+                        <button className="btn btn-primary" onClick={this._submitAnotherTeam}>Submit another</button>
                     </div>
                 )}
             </Fragment>
         )
     }
 
-    _submitTeam = () => {
-        const { phase } = this.state; //Variables
-        switch (phase) {
-            case TEAM_PHASES.INIT:
-                return __signup.bind(this)();
-            case TEAM_PHASES.SIGNED_UP:
-                return __confirmAccount.bind(this)();
-            default:
-                return;
-        }
-
-        function __confirmAccount() {
-            const { team, confirmationCode } = this.state;
-            authService.verifyAccount(team.email, confirmationCode)
-                .then(results => {
-                    __completePhase.bind(this)(TEAM_PHASES.EMAIL_CONFIRMED);
-                    return __submitTeam.bind(this)()
-                })
-                .then(results => {
-                    __completePhase.bind(this)(TEAM_PHASES.TEAM_SUBMITED);
-                })
-                .catch(error => console.log("ERROR", error));
-
-            function __submitTeam() {
-                const { team } = this.state;
-                return teamService.createTeam(team);
-            }
-        }
-
-        function __completePhase(completedPhase) {
-            switch (completedPhase) {
-                case TEAM_PHASES.SIGNED_UP:
-                    return this.setState({ phase: TEAM_PHASES.SIGNED_UP });
-                case TEAM_PHASES.EMAIL_CONFIRMED:
-                    return this.setState({ phase: TEAM_PHASES.EMAIL_CONFIRMED });
-                case TEAM_PHASES.TEAM_SUBMITED:
-                    return this.setState({ phase: TEAM_PHASES.TEAM_SUBMITED });
-                default:
-                    return this.setState({ phase: TEAM_PHASES.INIT });
-            }
-
-        }
-
-        function __signup() {
-            const { team } = this.state;
-            authService.signUp({ username: team.email, email: team.email, password: 'randomPassword123' })
-                .then(results => {
-                    __completePhase.bind(this)(TEAM_PHASES.SIGNED_UP);
-                })
-                .catch(error => console.log("ERROR", error));
-        }
+    _submitAnotherTeam = () => {
+        this.setState({ teamSubmitted: false });
     }
 
-    _onChange = (event) => {
-        const { name, value } = event.target;
+    _submitTeam = async () => {
+        const { team } = this.state;
+        const TeamNameLength = 30;
 
-        this.setState({
-            ...this.state,
-            [name]: value
-        })
+        const validation = await __validateTeam(team);
+        console.log("VALIDATION", validation);
+        if (validation)
+            return this.setState({ errorMessages: validation });
+
+        teamService.createTeam(team)
+            .then(result => {
+                this.setState({ teamSubmitted: true });
+            })
+            .catch(error => {
+                this.setState({ errorMessages: [error.message] })
+                console.log("Error submitting team", error);
+            })
+
+
+        async function __validateTeam(team) {
+            const errorMessages = [];
+            const employees = await employeeService.fetchEmployees();
+            const validEmail = employees.find(employee => employee.email === team.email);
+
+            //Team Name
+            if (!team.teamName)
+                errorMessages.push("Team name is required!");
+            if (!team.teamName || team.teamName.length > TeamNameLength)
+                errorMessages.push("Team name should be shorter than 30 characters");
+
+            //Email
+            if (!validEmail)
+                errorMessages.push("The Email provided is not a valid alten email");
+            if (!team.email)
+                errorMessages.push("Email is required!");
+
+            //Company Name
+            if (!team.companyName)
+                errorMessages.push("Company name is required!");
+
+            //Minutes
+            if (team.minutes < 0)
+                errorMessages.push("Minutes should be a real number");
+            if (team.minutes < 0)
+                errorMessages.push("Minutes should be a real number");
+            if (!team.minutes)
+                errorMessages.push("Minutes is required!");
+
+            if (errorMessages.length > 0)
+                return errorMessages;
+            return false;
+        }
     }
 
     _onChangeTeam = (event) => {

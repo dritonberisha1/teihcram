@@ -55,14 +55,8 @@ custom:
     seed:
       localhost:
         sources:
-          - table: ${env:AWS_DYNAMODB_COMPANIES_TABLE_NAME}
-            sources: [./data/seed/dev-companies.json]
           - table: ${env:AWS_DYNAMODB_TEAMS_TABLE_NAME}
             sources: [./data/seed/dev-teams.json]
-      dev:
-        sources:
-          - table: ${env:AWS_DYNAMODB_COMPANIES_TABLE_NAME}
-            sources: [./data/seed/dev-companies.json]
       
 # you can overwrite defaults here
 #  stage: dev
@@ -98,13 +92,17 @@ custom:
 #    - exclude-me-dir/**
 
 functions:
-  get-total-minutes:
-    handler: index.handler
-    events:
-      - http:
-          path: analytics
-          method: get
-          cors: true
+  # create-team:
+  #   handler: index.handler
+  #   events:
+  #     - http:
+  #         path: teams
+  #         method: post
+  #         cors: true
+  #         authorizer:
+  #           type: COGNITO_USER_POOLS
+  #           authorizerId:
+  #             Ref: Authorizer
   create-team:
     handler: index.handler
     events:
@@ -112,22 +110,11 @@ functions:
           path: teams
           method: post
           cors: true
-          authorizer:
-            type: COGNITO_USER_POOLS
-            authorizerId:
-              Ref: Authorizer
   fetch-teams:
     handler: index.handler
     events:
       - http:
           path: teams
-          method: get
-          cors: true
-  fetch-companies:
-    handler: index.handler
-    events:
-      - http:
-          path: companies
           method: get
           cors: true
 
@@ -211,23 +198,7 @@ resources:
           StreamViewType: NEW_AND_OLD_IMAGES
         PointInTimeRecoverySpecification:
           PointInTimeRecoveryEnabled: true
-    CompaniesDynamoDBTable:
-      Type: "AWS::DynamoDB::Table"
-      Properties:
-        AttributeDefinitions:
-          - AttributeName: id
-            AttributeType: S
-        KeySchema:
-          - AttributeName: id
-            KeyType: HASH
-        ProvisionedThroughput:
-          ReadCapacityUnits: 5
-          WriteCapacityUnits: 5
-        TableName: ${env:AWS_DYNAMODB_COMPANIES_TABLE_NAME}
-        StreamSpecification:
-          StreamViewType: NEW_AND_OLD_IMAGES
-        PointInTimeRecoverySpecification:
-          PointInTimeRecoveryEnabled: true                        
+                         
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details

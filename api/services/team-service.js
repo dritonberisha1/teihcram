@@ -10,10 +10,6 @@ class TeamService {
     async fetchTeams() {
         return teamRepository.fetchTeams();
     }
-
-    async getTotalMinutes() {
-        return 20;
-    }
 }
 
 export default new TeamService();
