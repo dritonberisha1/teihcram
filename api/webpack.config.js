@@ -1,5 +1,5 @@
 const path = require('path');
-const nodeExternals = require('webpack-node-externals');
+// const nodeExternals = require('webpack-node-externals');
 // eslint-disable-next-line import/no-unresolved
 const slsw = require('serverless-webpack');
 
@@ -7,7 +7,7 @@ module.exports = {
   optimization: {
     minimize: false
   },
-  externals: [nodeExternals()],
+  // externals: [nodeExternals()],
   entry: slsw.lib.entries,
   target: 'node',
   mode: slsw.lib.webpack.isLocal ? 'development' : 'production',
