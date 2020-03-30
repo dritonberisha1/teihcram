@@ -183,13 +183,9 @@ resources:
         AttributeDefinitions:
           - AttributeName: email
             AttributeType: S
-          - AttributeName: minutes
-            AttributeType: S
         KeySchema:
           - AttributeName: email
             KeyType: HASH
-          - AttributeName: minutes
-            KeyType: RANGE
         ProvisionedThroughput:
           ReadCapacityUnits: 5
           WriteCapacityUnits: 5

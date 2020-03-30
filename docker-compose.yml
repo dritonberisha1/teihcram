@@ -16,7 +16,7 @@ services:
           - ./ops:/easter/ops
           - ./web:/easter/web
         env_file:
-          - ./ops/dev.env
+          - ./ops/prod.env
     api:
         image: easter/api
         container_name: easter-api

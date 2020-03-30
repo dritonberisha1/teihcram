@@ -1,35 +1,45 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import ReactPageScroller from 'react-page-scroller';
 
-import CreateForm from './_create-form';
+import TotalPointsSection from './sections/total-points-section';
+import AboutSection from './sections/about-section';
+import ApplySection from './sections/apply-section';
+import LeaderboardSection from './sections/leaderboard-section';
+import RulesSection from './sections/rules-section';
 
-function FrontPage() {
+import '../styles/app.scss';
 
-    return (
-        <div className="bg-white">
-            <h1>Front Page</h1>
-            <Link to="/admin/login"><h2>Login</h2></Link>
+class FrontPage extends Component {
 
-            <div className="d-flex justify-content-center flex-row">
-                <div className="d-flex col-lg-4 flex-column">
-                    <CreateForm />
+    constructor(props) {
+        super(props);
+        this.state = {
+            currentPage: null
+        }
+    }
+
+    render() {
+        return (
+            <Fragment>
+                <div className="front-container">
+                    <ReactPageScroller
+                        pageOnChange={this._handlePageChange}
+                        customPageNumber={this.state.currentPage}>
+                        <TotalPointsSection />
+                        <AboutSection />
+                        <LeaderboardSection />
+                        <RulesSection />
+                        <ApplySection />
+                    </ReactPageScroller>
                 </div>
-            </div>
+            </Fragment >
+        )
+    }
 
-            <div>
-                <div className="my-5">-</div>
-                <div className="my-5">-</div>
-                <div className="my-5">-</div>
-                <div className="my-5">-</div>
-                <div className="my-5">-</div>
-                <div className="my-5">-</div>
-                <div className="my-5">-</div>
-                <div className="my-5">-</div>
-                <div className="my-5">-</div>
-                <div className="mt-5">-</div>
-            </div>
-        </div>
-    );
+    _handlePageChange = number => {
+        this.setState({ currentPage: number }); // set currentPage number, to reset it from the previous selected.
+    };
 }
 
 export default FrontPage;

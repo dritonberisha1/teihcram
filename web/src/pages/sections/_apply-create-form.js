@@ -1,8 +1,7 @@
 import React, { Component, Fragment } from 'react';
-import authService from '../services/auth-service';
-import teamService from '../services/team-service';
-import companyService from '../services/company-service';
-import employeeService from '../services/employee-service';
+import teamService from '../../services/team-service';
+import companyService from '../../services/company-service';
+import employeeService from '../../services/employee-service';
 
 class CreateForm extends Component {
     constructor(props) {
@@ -11,6 +10,7 @@ class CreateForm extends Component {
             companies: [],
             validation: {},
             team: {
+                name: '',
                 teamName: '',
                 companyName: '',
                 email: '',
@@ -27,32 +27,37 @@ class CreateForm extends Component {
 
     render() {
         const { companies = [], errorMessages = [], team, teamSubmitted } = this.state //Variables
-        const { teamName, companyName, email, minutes } = team;
+        const { name, teamName, companyName, email, minutes } = team;
         return (
             <Fragment>
                 {!teamSubmitted && (
-                    <div>
+                    <Fragment>
                         {errorMessages.map(message => (
                             <div class="alert alert-danger" role="alert">
                                 {message}
                             </div>
                         ))}
+                        <input name="name" defaultValue={name} onChange={this._onChangeTeam} placeholder="Name" className="form-control" />
                         <input name="teamName" defaultValue={teamName} onChange={this._onChangeTeam} placeholder="Team Name" className="form-control" />
-                        <select name="companyName" defaultValue={companyName} onChange={this._onChangeTeam}>
-                            <option value="">Select a Company</option>
-                            {companies.map(company => (
-                                <option key={company.name} value={company.name}>{company.name}</option>
-                            ))}
-                        </select>
+                        <div class="select">
+                            <label>
+                                <select name="companyName" className={companyName ? 'selected' : ''} defaultValue={companyName} onChange={this._onChangeTeam}>
+                                    <option value="">Select a Company</option>
+                                    {companies.map(company => (
+                                        <option key={company.name} value={company.name}>{company.name}</option>
+                                    ))}
+                                </select>
+                            </label>
+                        </div>
                         <input name="email" defaultValue={email} onChange={this._onChangeTeam} placeholder="Email" className="form-control" />
                         <input type="number" name="minutes" defaultValue={minutes} onChange={this._onChangeTeam} placeholder="Total Minutes" className="form-control" />
-                        <button className="btn btn-primary mt-2" onClick={this._submitTeam}>Submit team</button>
-                    </div>
+                        <button className="btn btn-primary" onClick={this._submitTeam}>Apply</button>
+                    </Fragment>
                 )}
                 {teamSubmitted && (
                     <div>
                         <p>Team has been submitted</p>
-                        <button className="btn btn-primary" onClick={this._submitAnotherTeam}>Submit another</button>
+                        <button className="btn btn-primary" onClick={this._submitAnotherTeam}>Submit more</button>
                     </div>
                 )}
             </Fragment>
