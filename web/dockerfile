@@ -8,7 +8,7 @@ RUN         apt-get update \
 RUN         pip3 install --upgrade --user awscli awsebcli==3.10
 RUN         echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc
 
-RUN         npm install -g
+RUN         npm install -g npm
 
 EXPOSE      3000
 

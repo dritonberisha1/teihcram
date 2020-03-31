@@ -1,7 +1,9 @@
 // Brand colors
-$theme-colors: ("primary": #0093D6,
+$theme-colors: (
+  "primary": #0093D6,
   "secondary": #043962,
   "third": #fff,
-  "background": #dfdfdf);
+  //"background": #dfdfdf
+);
 
 @import "node_modules/bootstrap/scss/bootstrap";

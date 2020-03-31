@@ -1,0 +1,197 @@
+.fb {
+  background: #FCFCFC;
+  transition: all 300ms ease-out;
+  position: relative;
+
+  &-section {
+    height: 100vh;
+    width: 100vw;
+    display: inline-block;
+    text-align: center;
+
+    &_title {
+      svg {
+        width: 200px;
+        margin-top: 30px;
+        fill: #FCFCFC;
+      }
+    }
+
+    &_1 {
+      background: rgb(255, 221, 0);
+      background: linear-gradient(180deg, rgba(255, 221, 0, 1) 0%, rgba(255, 187, 0, 1) 100%);
+
+      &_circles {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        margin: 25px auto;
+        overflow: hidden;
+
+        > svg {
+          position: absolute;
+          width: 30px;
+
+          &.circle_1 {
+            left: -15px;
+            top: 50px;
+            fill: rgb(166, 213, 229);
+          }
+
+          &.circle_2 {
+            left: calc(100% - 80% - 15px);
+            top: 0;
+
+            fill: rgb(255, 255, 255);
+          }
+
+          &.circle_3 {
+            left: calc(100% - 60% - 15px);
+            top: 50px;
+            fill: rgb(166, 213, 229);
+          }
+
+          &.circle_4 {
+            left: calc(100% - 40% - 15px);
+            top: 0;
+            fill: rgb(255, 255, 255);
+          }
+
+          &.circle_5 {
+            left: calc(100% - 20% - 15px);
+            top: 50px;
+            fill: rgb(166, 213, 229);
+          }
+
+          &.circle_6 {
+            left: calc(100% - 15px);
+            top: 0;
+            fill: rgb(255, 255, 255);
+          }
+        }
+      }
+
+      .easter {
+
+        color: #FCFCFC;
+
+        h5 {
+          color: #e38ba8;
+          font-size: 2rem;
+        }
+
+        h4 {
+          font-size: 35px;
+        }
+      }
+
+      .numOfMin {
+        color: #FCFCFC;
+
+        h1 {
+          font-size: 120px;
+          font-weight: bolder;
+          margin: 0;
+        }
+
+        small {
+          font-size: 26px;
+        }
+      }
+    }
+
+    &_2 {
+      background: #FCFCFC;
+      position: relative;
+
+      h3 {
+        margin: 50px auto;
+        color: #FFBB00;
+        font-weight: bold;
+        font-size: 35px;
+      }
+
+      .triAngles {
+        position: absolute;
+        bottom: 200px;
+
+        &_tri {
+
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-left: 15px solid transparent;
+          border-right: 15px solid transparent;
+          border-bottom: 30px solid red;
+        }
+      }
+    }
+
+    &_3 {
+      background: #FCFCFC;
+
+      h3 {
+        margin: 50px auto;
+        color: #FFBB00;
+        font-weight: bold;
+        font-size: 35px;
+      }
+
+
+    }
+
+    &_4 {
+      background: #83C6C0;
+
+      h3 {
+        margin: 50px auto;
+        color: #FCFCFC;
+        font-weight: bold;
+        font-size: 35px;
+      }
+
+      .directions {
+        margin-bottom: 50px;
+
+        h3 {
+          position: relative;
+          margin: 15px auto;
+          color: #FCFCFC;
+          font-weight: bold;
+          font-size: 35px;
+
+          &:after {
+            position: absolute;
+            content: '';
+            width: 50px;
+            height: 6px;
+            background: #A6D5E5;
+            display: inline-block;
+            top: 120%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+          }
+        }
+
+        p {
+          font-size: 26px;
+          color: #fff;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
+
+@keyframes changeColorCircle1 {
+  0% {
+    fill: rgb(166, 213, 229);
+  }
+  50% {
+    fill: rgb(255, 255, 255);
+  }
+  100% {
+    fill: rgb(166, 213, 229);
+  }
+}
