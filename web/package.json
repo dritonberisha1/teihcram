@@ -4,18 +4,12 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
-    "aws-amplify": "^2.2.6",
-    "aws-sdk": "^2.633.0",
     "bootstrap": "^4.4.1",
-    "chart.js": "^2.9.3",
-    "cra-template": "1.0.2",
     "lodash": "^4.17.15",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
-    "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.0",
-    "react-page-scroller": "^2.0.6-beta",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "react-toastify": "^1.4.3"

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import authService from '../../../services/auth-service';
-import altenLogo from '../../../images/alten-logo.svg';
 
+const altenLogo = '';
 class Header extends Component {
     render() {
         return (
