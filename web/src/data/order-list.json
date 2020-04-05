@@ -1,0 +1,49 @@
+[
+    {
+        "productCategory": "Desinfectant",
+        "productName": "Hand Disinfection Gel",
+        "amount": 200,
+        "price": 2000,
+        "arrival_date": "10/04/2020",
+        "certificates": [
+            "ce",
+            "iso",
+            "fda"
+        ]
+    },
+    {
+        "productCategory": "Thermometer",
+        "productName": "Handheld Non-contact Digital Infrared Thermometer",
+        "amount": 30,
+        "price": 3000,
+        "arrival_date": "09/04/2020",
+        "certificates": [
+            "ce",
+            "iso",
+            "fda"
+        ]
+    },
+    {
+        "productCategory": "Protective suit",
+        "productName": "Biohazard Protection Coverall",
+        "amount": 200,
+        "price": 5000,
+        "arrival_date": "15/04/2020",
+        "certificates": [
+            "ce",
+            "iso"
+        ]
+    },
+    {
+        "productCategory": "Gloves",
+        "productName": "UltraTOUCH Violet Nitrile Gloves",
+        "amount": 600,
+        "price": 5500,
+        "arrival_date": "08/04/2020",
+        "certificates": [
+            "ce",
+            "iso",
+            "fda"
+        ]
+    }
+]

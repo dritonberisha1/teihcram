@@ -1,0 +1,14 @@
+// Brand colors
+$theme-colors: (
+  "primary": #7b1fa2,
+  "high": #388e3c,
+  "medium": #1976d2,
+  "low": #fbc02d
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+  font-family: Kanit;
+  font-style: normal;
+}

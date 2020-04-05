@@ -1,0 +1,54 @@
+[
+    {
+        "name": "Hand Disinfection Gel",
+        "category": "Desinfectant"
+    },
+    {
+        "name": "Handheld Non-contact Digital Infrared Thermometer",
+        "category": "Thermometer"
+    },
+    {
+        "name": "Chemical Protective Clothing",
+        "category": "Protective suit"
+    },
+    {
+        "name": "Biohazard Protection Coverall",
+        "category": "Protective suit"
+    },
+    {
+        "name": "UltraTOUCH Violet Nitrile Gloves",
+        "category": "Gloves"
+    },
+    {
+        "name": "RESPIRATOR MASKS",
+        "category": "Face mask"
+    },
+    {
+        "name": "Particulate Respirator",
+        "category": "Face mask"
+    },
+    {
+        "name": "Anti-Fog Dental Full Face Shield",
+        "category": "Face mask"
+    },
+    {
+        "name": "Masks, 4 x 3.2 x 3 cm, Plastic",
+        "category": "Disposable mask"
+    },
+    {
+        "name": "3 Layer Anti Dust",
+        "category": "Disposable mask"
+    },
+    {
+        "name": "Fashion Protective Mouth Mask",
+        "category": "Disposable mask"
+    },
+    {
+        "name": "Disposable Mouth Cover",
+        "category": "Disposable mask"
+    },
+    {
+        "name": "3-Layer Disposable Medical Masks Dustproof/Surgical Masks",
+        "category": "Disposable mask"
+    }
+]

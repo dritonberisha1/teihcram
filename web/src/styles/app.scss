@@ -1,3 +1,96 @@
-$primary-color: #fed530;
-$secondary-color: #85c6c0;
-$tertiary-color: #fcfcfc;
+@import "./custom-bootstrap";
+
+.container {
+  .btn {
+    border-radius: 0;
+  }
+  table {
+    i {
+      cursor: pointer;
+    }
+  }
+  .seller-list {
+    .header {
+      padding-left: 12px;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      height: 50px;
+    }
+    .seller-element {
+      border: 1px solid #eceff1;
+      box-sizing: border-box;
+      .info {
+        flex: 4;
+      }
+      .action {
+        flex: 2;
+        .units {
+          flex: 1;
+        }
+        button {
+          flex: 1;
+        }
+      }
+      .seller-info {
+        .product-origin {
+          color: #455a64;
+        }
+      }
+      .action {
+        .units {
+          label {
+            position: absolute;
+            margin-top: -25px;
+          }
+        }
+      }
+      .product-info {
+        label {
+          margin: 0;
+          color: #90a4ae;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  .order-item-form {
+    text-align: start;
+  }
+  .brand-logo {
+    img {
+      width: 100px;
+      max-height: 100px;
+    }
+  }
+  .content {
+    margin-top: 95px;
+  }
+  .emergency {
+    height: 35px;
+    a {
+      font-size: 1rem;
+      text-decoration: underline;
+    }
+  }
+  .navigation {
+    position: fixed;
+    top: 91px;
+    right: 0;
+    left: 0;
+  }
+  nav {
+    border-bottom: 1px solid #eceff1;
+  }
+  .navbar {
+    position: fixed;
+    top: 35px;
+    right: 0;
+    left: 0;
+    .logo {
+      width: 120px;
+    }
+  }
+}

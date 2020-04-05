@@ -1,18 +1,20 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import FrontPage from './pages/front-page';
-import AdminPage from './pages/admin/admin-page';
+import '@fortawesome/fontawesome-free/css/all.css';
+
+import LandingPage from './pages/landing-page';
+import OrderPage from './pages/order-page';
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path='/'>
-          <FrontPage />
+        <Route exact path='/landing'>
+          <LandingPage />
         </Route>
-        <Route path='/admin'>
-          <AdminPage />
+        <Route path='/'>
+          <OrderPage />
         </Route>
       </Switch>
     </BrowserRouter>

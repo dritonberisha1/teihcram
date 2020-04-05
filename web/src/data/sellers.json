@@ -1,8 +1,75 @@
 [
     {
-        "name": "Test"
+        "name": "Kawe Group",
+        "rating": 8.9,
+        "product": "Surgical Mask",
+        "availableUnits": "30 000 000",
+        "origin": "Germany",
+        "moq": "5 000",
+        "unitPrice": 0.30,
+        "deliveryTime": "2 - 3 days",
+        "certificates": [
+            "ce",
+            "iso",
+            "fda"
+        ]
     },
     {
-        "name": "Test"
+        "name": "Liepājas Tekstils",
+        "rating": 8.1,
+        "product": "Surgical Mask",
+        "availableUnits": "30 000 000",
+        "origin": "Latvia",
+        "moq": "5 000",
+        "unitPrice": 0.35,
+        "deliveryTime": "2 - 3 days",
+        "certificates": [
+            "ce",
+            "iso",
+            "fda"
+        ]
+    },
+    {
+        "name": "Prestan Products, LLC",
+        "rating": 7.8,
+        "product": "Surgical Mask",
+        "availableUnits": "3 700 000",
+        "origin": "Latvia",
+        "moq": "30 000",
+        "unitPrice": 0.37,
+        "deliveryTime": "3 - 5 days",
+        "certificates": [
+            "ce",
+            "iso",
+            "fda"
+        ]
+    },
+    {
+        "name": "Erka The Original",
+        "rating": 7.5,
+        "product": "Surgical Mask",
+        "availableUnits": "1 200 500",
+        "origin": "Poland",
+        "moq": "35 000",
+        "unitPrice": 0.31,
+        "deliveryTime": "2 - 3 days",
+        "certificates": [
+            "ce",
+            "fda"
+        ]
+    },
+    {
+        "name": "Thenko Medical",
+        "rating": 6.9,
+        "product": "Surgical Mask",
+        "availableUnits": "200 000 000",
+        "origin": "Poland",
+        "moq": "1 500 000",
+        "unitPrice": 0.30,
+        "deliveryTime": "28 days",
+        "certificates": [
+            "ce",
+            "fda"
+        ]
     }
 ]
