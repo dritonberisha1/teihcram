@@ -12,6 +12,6 @@ RUN         npm install -g npm
 
 EXPOSE      3000
 
-WORKDIR     /easter/web
+WORKDIR     /teihcram/web
 
 ENTRYPOINT  ["sleep", "2d"]

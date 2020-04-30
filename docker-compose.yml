@@ -1,23 +1,47 @@
-version: "3"
+version: "3.2"
 
 services:
-    web:
-        image: easter/web
-        container_name: easter-web
-        tty: true
-        build:
-          context: ./web
-          dockerfile: dockerfile
-        ports:
-          - "3000:3000"
-        networks:
-          - easter-net
-        volumes:
-          - ./ops:/easter/ops
-          - ./web:/easter/web
-        env_file:
-          - ./ops/dev.env
-
+  web:
+    image: teihcram/web
+    container_name: teihcram-web
+    tty: true
+    build:
+      context: ./web
+      dockerfile: dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - teihcram-net
+    volumes:
+      - ./ops:/teihcram/ops
+      - ./web:/teihcram/web
+    env_file:
+      - ./ops/dev.env
+  www:
+    image: teihcram/www:latest
+    container_name: teihcram-www
+    build:
+      context: ./
+      dockerfile: ./www/dockerfile
+    ports:
+      - "8000:8000"
+    networks:
+      - teihcram-net
+    volumes:
+      - ./:/teihcram/
+      - type: volume
+        source: www_modules
+        target: /teihcram/www/node_modules
+        volume:
+          nocopy: true
+    env_file:
+      - ./ops/dev.env
+    extra_hosts:
+      - "www-dev.teihcram.com:0.0.0.0"
+  
 networks:
-    easter-net:
+  teihcram-net:
         driver: bridge
+
+volumes:
+  www_modules:
