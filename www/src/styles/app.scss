@@ -1,0 +1,85 @@
+$theme-colors: (
+  "primary": #7B1FA2,
+  "secondary": #CFD8DC,
+  "light-text": #fff,
+  "dark-text": #263238,
+  "tertiary": #0097A7,
+  "background": #ECEFF1
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* margin-bottom: 10px; */
+}
+
+.first-section{
+  position: relative;
+}
+
+.top-container {
+  .logo{
+    height: 50px;
+    width: 100px;
+    background-color: red;
+  }
+  position: absolute;
+  top: 0;
+  margin: 2rem;
+  padding: 1rem;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  .btn-outline-secondary{
+    margin-left: 1rem;
+    color: theme-color("primary");
+  }
+}
+
+.services{
+  z-index: 9999;
+  margin: -10% 2rem 0 2rem;
+  .logo{
+    height: 50px;
+    width: 100px;
+    background-color: red;
+  }
+  .suppliers{
+    padding: 0;
+    opacity: .9;
+    color: theme-color("dark-text");
+    .top-section{
+      padding: 1rem;
+      color: theme-color("light-text");
+      background-color: theme-color("primary");
+    }
+   .bottom-section{
+    padding: 1rem;
+    background-color: theme-color("background");
+   }
+  }
+  .medical{
+    .logo{
+      height: 50px;
+      width: 100px;
+      background-color: red;
+    }
+    padding: 0;
+    opacity: .9;
+    color: theme-color("dark-text");
+    .top-section{
+      padding: 1rem;
+      color: theme-color("light-text");
+      background-color: theme-color("tertiary");
+    }
+    .bottom-section{
+      padding: 1rem;
+      background-color: theme-color("background");
+    }
+  }
+}
