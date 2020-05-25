@@ -24,7 +24,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-
       <div className="container-xl">
         {children}
         <footer>

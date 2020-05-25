@@ -1,14 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap");
+
 $theme-colors: (
-  "primary": #7B1FA2,
-  "secondary": #CFD8DC,
-  "light-text": #fff,
+  "primary": #7b1fa2,
+  "secondary": #cfd8dc,
+  "white-text": #fff,
   "dark-text": #263238,
-  "tertiary": #0097A7,
-  "background": #ECEFF1
+  "medium-text": #455a64,
+  "tertiary": #0097a7,
+  "background": #eceff1,
+  "light-text": #90a4ae,
+);
+
+$spacer: 1rem;
+$spacers: (
+  6: (
+    $spacer * 4,
+  ),
+  7: (
+    $spacer * 5,
+  ),
+  8: (
+    $spacer * 7,
+  ),
+  9: (
+    $spacer * 10,
+  ),
+  10: (
+    $spacer * 12,
+  ),
 );
 
 @import "~bootstrap/scss/bootstrap";
 
+body {
+  font-family: "Kanit", sans-serif;
+}
 
 .background-image {
   width: 100%;
@@ -19,67 +45,313 @@ $theme-colors: (
   /* margin-bottom: 10px; */
 }
 
-.first-section{
+.first-section {
   position: relative;
-}
 
-.top-container {
-  .logo{
-    height: 50px;
-    width: 100px;
-    background-color: red;
-  }
-  position: absolute;
-  top: 0;
-  margin: 2rem;
-  padding: 1rem;
-  width: 50%;
-  background-color: rgba(255, 255, 255, 0.8);
-  .btn-outline-secondary{
-    margin-left: 1rem;
-    color: theme-color("primary");
-  }
-}
-
-.services{
-  z-index: 9999;
-  margin: -10% 2rem 0 2rem;
-  .logo{
-    height: 50px;
-    width: 100px;
-    background-color: red;
-  }
-  .suppliers{
-    padding: 0;
-    opacity: .9;
-    color: theme-color("dark-text");
-    .top-section{
-      padding: 1rem;
-      color: theme-color("light-text");
-      background-color: theme-color("primary");
-    }
-   .bottom-section{
-    padding: 1rem;
-    background-color: theme-color("background");
-   }
-  }
-  .medical{
-    .logo{
+  .top-container {
+    .logo {
       height: 50px;
       width: 100px;
-      background-color: red;
     }
-    padding: 0;
-    opacity: .9;
-    color: theme-color("dark-text");
-    .top-section{
-      padding: 1rem;
+    .secondary-text {
+      color: theme-color("medium-text");
+      font-family: Roboto;
+      font-size: 18px;
+    }
+    font-size: 36px;
+    line-height: 28px;
+    position: absolute;
+    top: 0;
+    margin: 2rem;
+    padding: 1rem;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    .btn-outline-secondary {
+      margin-left: 1rem;
+      color: theme-color("primary");
+    }
+    button {
+      font-family: Roboto;
+    }
+  }
+
+  .services {
+    z-index: 9999;
+    margin: -10% 2rem 0 2rem;
+
+    h3 {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 44px;
+    }
+    h4 {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 36px;
       color: theme-color("light-text");
-      background-color: theme-color("tertiary");
     }
-    .bottom-section{
+    .subtitle {
+      font-family: Roboto;
+      font-size: 18px;
+      line-height: 28px;
+    }
+    .top-section {
+      .logo {
+        height: 50px;
+      }
+    }
+    .bottom-section {
       padding: 1rem;
       background-color: theme-color("background");
+      .logo {
+        height: 32px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 28px;
+        color: theme-color("medium-text");
+        font-family: Roboto;
+      }
+      h5 {
+        font-family: Kanit;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;
+        color: theme-color("dark-text");
+      }
+    }
+    .suppliers {
+      padding: 0;
+      opacity: 0.9;
+      color: theme-color("dark-text");
+      .top-section {
+        padding: 1rem;
+        color: theme-color("white-text");
+        background-color: theme-color("primary");
+      }
+      .bottom-section {
+        padding: 1rem;
+        background-color: theme-color("background");
+        p {
+          font-size: 18px;
+          line-height: 28px;
+          color: theme-color("medium-text");
+          font-family: Roboto;
+        }
+        h5 {
+          font-family: Kanit;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 32px;
+          color: theme-color("dark-text");
+        }
+      }
+    }
+    .medical {
+      .logo {
+      }
+      padding: 0;
+      opacity: 0.9;
+      color: theme-color("dark-text");
+      .top-section {
+        padding: 1rem;
+        color: theme-color("white-text");
+        background-color: theme-color("tertiary");
+      }
+      .bottom-section {
+        padding: 1rem;
+        background-color: theme-color("background");
+      }
+    }
+  }
+}
+
+.second-section {
+  h3 {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 44px;
+    color: theme-color("dark-text");
+  }
+  .diagram {
+    width: 100%;
+  }
+}
+
+.third-section {
+  .b-bottom {
+    border-bottom: 1px solid theme-color("light-text");
+  }
+  background-color: theme-color("background");
+  .contact-us {
+    h3 {
+      font-family: Kanit;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 44px;
+      color: theme-color("dark-text");
+    }
+    p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 0.9rem;
+      line-height: 1.4rem;
+      color: theme-color("dark-text");
+    }
+    @media (min-width: 1199.98px) {
+      p {
+        width: 34%;
+      }
+    }
+  }
+  .segment {
+    .submit {
+      border-radius: 2px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 28px;
+    }
+    .company-name {
+      height: 44px;
+    }
+    .segment-title {
+      font-size: 18px;
+      line-height: 28px;
+      color: theme-color("medium-text");
+    }
+    h3 {
+      font-family: Kanit;
+      margin-bottom: 0.2rem;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.8rem;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: theme-color("dark-text");
+    }
+    .inputs {
+      input::placeholder {
+        color: theme-color("light-text");
+        padding-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.75rem;
+      }
+      textarea::placeholder {
+        color: theme-color("light-text");
+        padding-left: 10px;
+        padding-top: 5px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.8rem;
+      }
+      textarea {
+        height: 10rem;
+      }
+      label {
+        font-family: Kanit;
+        margin-bottom: 0.2rem;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: theme-color("dark-text");
+      }
+    }
+    p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+      color: theme-color("medium-text");
+    }
+    .business-type {
+      label {
+        margin: 0;
+        padding-left: 1.5rem;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        text-transform: none;
+        color: theme-color("medium-text");
+      }
+    }
+    @media (min-width: 1199.98px) {
+      p {
+        width: 55%;
+      }
+    }
+  }
+}
+
+.fourth-section {
+  h1 {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: theme-color("dark-text");
+  }
+  p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: theme-color("dark-text");
+    a {
+      font-weight: 800;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.footer {
+  background-color: theme-color("dark-text");
+  .logo {
+    width: 44px;
+  }
+  .social {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    a {
+      color: theme-color("background");
+    }
+  }
+  .copyright {
+    p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 0.75rem;
+      color: theme-color("white-text");
+    }
+  }
+  .terms {
+    a {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 0.75rem;
+      color: theme-color("light-text");
     }
   }
 }
